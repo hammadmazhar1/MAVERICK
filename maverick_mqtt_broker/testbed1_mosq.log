@@ -1,0 +1,935 @@
+2021-06-25  :12:07:08: mosquitto version 2.0.7 starting
+2021-06-25  :12:07:08: Config loaded from ../testbed1_mosq.conf.
+2021-06-25  :12:07:08: Policies added:../testbed1_pol.pol
+2021-06-25  :12:07:08: Propositons added:../testbed1.prop
+2021-06-25  :12:07:08: Policy, invariant engine and state tracking created
+2021-06-25  :12:07:08: Opening ipv4 listen socket on port 1883.
+2021-06-25  :12:07:08: Opening ipv6 listen socket on port 1883.
+2021-06-25  :12:07:08: mosquitto version 2.0.7 running
+2021-06-25  :12:07:09: New connection from 192.168.0.51:58802 on port 1883.
+2021-06-25  :12:07:09: New connection from 192.168.0.106:38400 on port 1883.
+2021-06-25  :12:07:09: New client connected from 192.168.0.51:58802 as PARAPET_PROXY (p2, c1, k60, u'parapet').
+2021-06-25  :12:07:09: New client connected from 192.168.0.106:38400 as Upstream_automation (p2, c1, k60, u'parapet').
+2021-06-25  :12:07:18: Client PARAPET_PROXY disconnected.
+2021-06-25  :12:07:38: Client Upstream_automation disconnected.
+2021-06-25  :12:08:03: New connection from 192.168.0.51:58806 on port 1883.
+2021-06-25  :12:08:04: New client connected from 192.168.0.51:58806 as PARAPET_PROXY (p2, c1, k60, u'parapet').
+2021-06-25  :12:08:47: New connection from 192.168.0.106:38404 on port 1883.
+2021-06-25  :12:08:48: New client connected from 192.168.0.106:38404 as Upstream_automation (p2, c1, k60, u'parapet').
+2021-06-25  :12:09:59: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BedroomAC/bool_On', ... (5 bytes)) passes invariant.
+2021-06-25  :12:09:59: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:09:59: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BedroomAC/bool_On', ... (5 bytes))
+2021-06-25  :12:09:59: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:09:59: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'BedroomAC/bool_On', ... (3 bytes)) passes invariant.
+2021-06-25  :12:09:59: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:09:59: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'BedroomAC/bool_On', ... (3 bytes))
+2021-06-25  :12:09:59: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:05: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LivingRoomHumid/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :12:10:05: Time to Evaluate Policy: 0.001
+2021-06-25  :12:10:05: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LivingRoomHumid/bool_On/set', ... (4 bytes))
+2021-06-25  :12:10:05: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:05: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'LivingRoomHumid/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:10:05: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:10:05: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'LivingRoomHumid/bool_On', ... (4 bytes))
+2021-06-25  :12:10:05: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:05: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'LivingRoomHumidifer/bool_On', ... (2 bytes)) passes invariant.
+2021-06-25  :12:10:05: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:10:05: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'LivingRoomHumidifer/bool_On', ... (2 bytes))
+2021-06-25  :12:10:05: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:11: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'SmartTV/str_whats_playing/set', ... (16 bytes)): Maintains Policy
+2021-06-25  :12:10:11: Time to Evaluate Policy: 0.001
+2021-06-25  :12:10:11: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'SmartTV/str_whats_playing/set', ... (16 bytes))
+2021-06-25  :12:10:11: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:11: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'SmartTV/str_whats_playing', ... (16 bytes)) passes invariant.
+2021-06-25  :12:10:11: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:10:11: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'SmartTV/str_whats_playing', ... (16 bytes))
+2021-06-25  :12:10:11: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:11: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'SmartTV/str_whats_playing', ... (16 bytes)) passes invariant.
+2021-06-25  :12:10:11: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:10:11: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'SmartTV/str_whats_playing', ... (16 bytes))
+2021-06-25  :12:10:11: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:18: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'LivingRoomHumidifer/bool_On', ... (3 bytes)) passes invariant.
+2021-06-25  :12:10:18: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:10:18: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'LivingRoomHumidifer/bool_On', ... (3 bytes))
+2021-06-25  :12:10:18: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:18: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'LivingRoomHumid/bool_On', ... (5 bytes)) passes invariant.
+2021-06-25  :12:10:18: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:10:18: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'LivingRoomHumid/bool_On', ... (5 bytes))
+2021-06-25  :12:10:18: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:24: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BedroomShades/bool_Closed', ... (4 bytes)) passes invariant.
+2021-06-25  :12:10:24: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:10:24: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BedroomShades/bool_Closed', ... (4 bytes))
+2021-06-25  :12:10:24: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:30: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'LivingRoomHumid/bool_On', ... (5 bytes)) passes invariant.
+2021-06-25  :12:10:30: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:10:30: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'LivingRoomHumid/bool_On', ... (5 bytes))
+2021-06-25  :12:10:30: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:36: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BedroomLight/bool_On/set', ... (5 bytes)): Maintains Policy
+2021-06-25  :12:10:36: Time to Evaluate Policy: 0.001
+2021-06-25  :12:10:36: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BedroomLight/bool_On/set', ... (5 bytes))
+2021-06-25  :12:10:36: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:36: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'BedroomLight/bool_On', ... (3 bytes)) passes invariant.
+2021-06-25  :12:10:36: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:10:36: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'BedroomLight/bool_On', ... (3 bytes))
+2021-06-25  :12:10:36: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:36: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m2, 'BedroomLight/bool_On', ... (5 bytes)) passes invariant.
+2021-06-25  :12:10:36: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:10:36: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m2, 'BedroomLight/bool_On', ... (5 bytes))
+2021-06-25  :12:10:36: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:42: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LivingRoomFan/bool_On/set', ... (5 bytes)): Maintains Policy
+2021-06-25  :12:10:42: Time to Evaluate Policy: 0.001
+2021-06-25  :12:10:42: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LivingRoomFan/bool_On/set', ... (5 bytes))
+2021-06-25  :12:10:42: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:42: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'LivingRoomFan/bool_On', ... (5 bytes)) passes invariant.
+2021-06-25  :12:10:42: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:10:42: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'LivingRoomFan/bool_On', ... (5 bytes))
+2021-06-25  :12:10:42: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:42: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'LivingRoomFan/bool_On', ... (3 bytes)) passes invariant.
+2021-06-25  :12:10:42: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:10:42: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'LivingRoomFan/bool_On', ... (3 bytes))
+2021-06-25  :12:10:42: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:48: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'LivingRoomShades/bool_Closed', ... (4 bytes)) passes invariant.
+2021-06-25  :12:10:48: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:10:48: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'LivingRoomShades/bool_Closed', ... (4 bytes))
+2021-06-25  :12:10:48: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:48: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'LivingRoomShades/bool_Closed', ... (2 bytes)) passes invariant.
+2021-06-25  :12:10:48: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:10:48: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'LivingRoomShades/bool_Closed', ... (2 bytes))
+2021-06-25  :12:10:48: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:54: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/str_mode', ... (5 bytes)) passes invariant.
+2021-06-25  :12:10:54: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:10:54: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/str_mode', ... (5 bytes))
+2021-06-25  :12:10:54: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:10:54: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Doorbell/str_mode', ... (5 bytes)) passes invariant.
+2021-06-25  :12:10:54: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:10:54: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Doorbell/str_mode', ... (5 bytes))
+2021-06-25  :12:10:54: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:00: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'FrontPorchSecCamera/bool_On', ... (5 bytes)) passes invariant.
+2021-06-25  :12:11:00: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:11:00: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'FrontPorchSecCamera/bool_On', ... (5 bytes))
+2021-06-25  :12:11:00: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:00: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'FrontPorchSecCamera/bool_On', ... (3 bytes)) passes invariant.
+2021-06-25  :12:11:00: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:11:00: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'FrontPorchSecCamera/bool_On', ... (3 bytes))
+2021-06-25  :12:11:00: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:06: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'LivingRoomHumid/bool_On', ... (5 bytes)) passes invariant.
+2021-06-25  :12:11:06: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:11:06: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'LivingRoomHumid/bool_On', ... (5 bytes))
+2021-06-25  :12:11:06: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:13: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :12:11:13: Time to Evaluate Policy: 0.001
+2021-06-25  :12:11:13: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On/set', ... (4 bytes))
+2021-06-25  :12:11:13: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:13: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:11:13: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:11:13: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes))
+2021-06-25  :12:11:13: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:13: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'BackPorchSecCamera/bool_On', ... (2 bytes)) passes invariant.
+2021-06-25  :12:11:13: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:11:13: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'BackPorchSecCamera/bool_On', ... (2 bytes))
+2021-06-25  :12:11:13: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:19: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BedroomFan/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :12:11:19: Time to Evaluate Policy: 0.001
+2021-06-25  :12:11:19: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BedroomFan/bool_On/set', ... (4 bytes))
+2021-06-25  :12:11:19: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:19: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BedroomFan/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:11:19: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:11:19: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BedroomFan/bool_On', ... (4 bytes))
+2021-06-25  :12:11:19: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:25: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/bool_Unlock', ... (5 bytes)) passes invariant.
+2021-06-25  :12:11:25: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:11:25: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/bool_Unlock', ... (5 bytes))
+2021-06-25  :12:11:25: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:25: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Doorbell/bool_Unlock', ... (3 bytes)) passes invariant.
+2021-06-25  :12:11:25: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:11:25: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Doorbell/bool_Unlock', ... (3 bytes))
+2021-06-25  :12:11:25: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:31: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BedroomAC/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :12:11:31: Time to Evaluate Policy: 0.001
+2021-06-25  :12:11:31: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BedroomAC/bool_On/set', ... (4 bytes))
+2021-06-25  :12:11:31: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:31: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BedroomAC/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:11:31: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:11:31: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BedroomAC/bool_On', ... (4 bytes))
+2021-06-25  :12:11:31: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:31: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'BedroomAC/bool_On', ... (2 bytes)) passes invariant.
+2021-06-25  :12:11:31: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:11:31: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'BedroomAC/bool_On', ... (2 bytes))
+2021-06-25  :12:11:31: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:37: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BedroomAC/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :12:11:37: Time to Evaluate Policy: 0.001
+2021-06-25  :12:11:37: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BedroomAC/bool_On/set', ... (4 bytes))
+2021-06-25  :12:11:37: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:37: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BedroomAC/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:11:37: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:11:37: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BedroomAC/bool_On', ... (4 bytes))
+2021-06-25  :12:11:37: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'SmartHome/str_mode/set', ... (8 bytes)): Maintains Policy
+2021-06-25  :12:11:43: Time to Evaluate Policy: 0.001
+2021-06-25  :12:11:43: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'SmartHome/str_mode/set', ... (8 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'SmartHome/str_mode', ... (8 bytes)) violates invariant. Sending corrective actions
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'SmartHome/str_mode', ... (8 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'SmartHome/str_mode', ... (8 bytes)) violates invariant. Sending corrective actions
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'SmartHome/str_mode', ... (8 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m2, 'DoorLock/bool_Locked', ... (4 bytes)) violates invariant. Sending corrective actions
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m2, 'DoorLock/bool_Locked', ... (4 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'SecurityAlarm/bool_set', ... (4 bytes)) violates invariant. Sending corrective actions
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'SecurityAlarm/bool_set', ... (4 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m2, 'SecurityAlarm/bool_set', ... (2 bytes)) violates invariant. Sending corrective actions
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m2, 'SecurityAlarm/bool_set', ... (2 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m3, 'FrontPorchSecCamera/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m3, 'FrontPorchSecCamera/bool_On', ... (4 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'FrontPorchSecCamera/bool_On', ... (2 bytes)) passes invariant.
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'FrontPorchSecCamera/bool_On', ... (2 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m2, 'DoorLock/bool_Locked', ... (4 bytes)) passes invariant.
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m2, 'DoorLock/bool_Locked', ... (4 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'FrontPorchSecCamera/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'FrontPorchSecCamera/bool_On', ... (4 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m2, 'SecurityAlarm/bool_set', ... (4 bytes)) passes invariant.
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m2, 'SecurityAlarm/bool_set', ... (4 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'FrontPorchSecCamera/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'FrontPorchSecCamera/bool_On', ... (4 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'FrontPorchSecCamera/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'FrontPorchSecCamera/bool_On', ... (4 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'SecurityAlarm/bool_set', ... (4 bytes)) passes invariant.
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'SecurityAlarm/bool_set', ... (4 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'FrontPorchSecCamera/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'FrontPorchSecCamera/bool_On', ... (4 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:43: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:11:43: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:11:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes))
+2021-06-25  :12:11:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:49: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BedroomHumid/bool_On', ... (5 bytes)) passes invariant.
+2021-06-25  :12:11:49: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:11:49: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BedroomHumid/bool_On', ... (5 bytes))
+2021-06-25  :12:11:49: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:49: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'BedroomHumid/bool_On', ... (3 bytes)) passes invariant.
+2021-06-25  :12:11:49: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:11:49: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'BedroomHumid/bool_On', ... (3 bytes))
+2021-06-25  :12:11:49: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:11:55: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Doorbell/str_mode/set', ... (3 bytes)): Violates Policy
+2021-06-25  :12:11:55: Time to Evaluate Policy: 0.000
+2021-06-25  :12:12:01: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'MicrowaveOven/int_Temp/set', ... (3 bytes)): Violates Policy
+2021-06-25  :12:12:01: Time to Evaluate Policy: 0.001
+2021-06-25  :12:12:07: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'LivingRoomFan/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:12:07: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:12:07: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'LivingRoomFan/bool_On', ... (4 bytes))
+2021-06-25  :12:12:07: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:12:07: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'LivingRoomFan/bool_On', ... (2 bytes)) passes invariant.
+2021-06-25  :12:12:07: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:12:07: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'LivingRoomFan/bool_On', ... (2 bytes))
+2021-06-25  :12:12:07: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:12:14: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Doorbell/bool_Unlock/set', ... (5 bytes)): Violates Policy
+2021-06-25  :12:12:14: Time to Evaluate Policy: 0.000
+2021-06-25  :12:12:20: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BedroomHumid/bool_On/set', ... (5 bytes)): Violates Policy
+2021-06-25  :12:12:20: Time to Evaluate Policy: 0.001
+2021-06-25  :12:12:26: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Doorbell/bool_Unlock', ... (2 bytes)) passes invariant.
+2021-06-25  :12:12:26: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:12:26: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Doorbell/bool_Unlock', ... (2 bytes))
+2021-06-25  :12:12:26: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:12:26: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/bool_Unlock', ... (4 bytes)) passes invariant.
+2021-06-25  :12:12:26: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:12:26: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/bool_Unlock', ... (4 bytes))
+2021-06-25  :12:12:26: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:12:32: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'MicrowaveOven/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:12:32: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:12:32: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'MicrowaveOven/bool_On', ... (4 bytes))
+2021-06-25  :12:12:32: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:12:38: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'MicrowaveOven/bool_On', ... (3 bytes)) passes invariant.
+2021-06-25  :12:12:38: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:12:38: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'MicrowaveOven/bool_On', ... (3 bytes))
+2021-06-25  :12:12:38: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:12:38: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'MicrowaveOven/bool_On', ... (5 bytes)) passes invariant.
+2021-06-25  :12:12:38: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:12:38: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'MicrowaveOven/bool_On', ... (5 bytes))
+2021-06-25  :12:12:38: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:12:44: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'MicrowaveOven/bool_On/set', ... (5 bytes)): Violates Policy
+2021-06-25  :12:12:44: Time to Evaluate Policy: 0.001
+2021-06-25  :12:12:50: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'SecurityAlarm/bool_alarm', ... (5 bytes)) passes invariant.
+2021-06-25  :12:12:50: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:12:50: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'SecurityAlarm/bool_alarm', ... (5 bytes))
+2021-06-25  :12:12:50: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:12:50: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m2, 'SecurityAlarm/bool_alarm', ... (3 bytes)) passes invariant.
+2021-06-25  :12:12:50: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:12:50: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m2, 'SecurityAlarm/bool_alarm', ... (3 bytes))
+2021-06-25  :12:12:50: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:12:56: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Doorbell/bool_Rung/set', ... (5 bytes)): Violates Policy
+2021-06-25  :12:12:56: Time to Evaluate Policy: 0.001
+2021-06-25  :12:13:02: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'SecurityAlarm/bool_set/set', ... (4 bytes)): Violates Policy
+2021-06-25  :12:13:02: Time to Evaluate Policy: 0.001
+2021-06-25  :12:13:08: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'LivingRoomHumidifer/bool_On', ... (2 bytes)) passes invariant.
+2021-06-25  :12:13:08: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:13:08: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'LivingRoomHumidifer/bool_On', ... (2 bytes))
+2021-06-25  :12:13:08: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:13:08: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'LivingRoomHumid/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:13:08: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:13:08: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'LivingRoomHumid/bool_On', ... (4 bytes))
+2021-06-25  :12:13:08: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:13:14: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LivingRoomAC/bool_On/set', ... (5 bytes)): Violates Policy
+2021-06-25  :12:13:14: Time to Evaluate Policy: 0.001
+2021-06-25  :12:13:21: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BedroomFan/bool_On/set', ... (5 bytes)): Violates Policy
+2021-06-25  :12:13:21: Time to Evaluate Policy: 0.001
+2021-06-25  :12:13:27: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'LivingRoomAC/bool_On', ... (5 bytes)) passes invariant.
+2021-06-25  :12:13:27: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:13:27: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'LivingRoomAC/bool_On', ... (5 bytes))
+2021-06-25  :12:13:27: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:13:33: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BedroomFan/bool_On/set', ... (4 bytes)): Violates Policy
+2021-06-25  :12:13:33: Time to Evaluate Policy: 0.001
+2021-06-25  :12:13:39: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/bool_Rung', ... (4 bytes)) passes invariant.
+2021-06-25  :12:13:39: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:13:39: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/bool_Rung', ... (4 bytes))
+2021-06-25  :12:13:39: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:13:39: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m2, 'Doorbell/bool_Rung', ... (2 bytes)) passes invariant.
+2021-06-25  :12:13:39: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:13:39: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m2, 'Doorbell/bool_Rung', ... (2 bytes))
+2021-06-25  :12:13:39: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:13:45: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/bool_Rung', ... (5 bytes)) passes invariant.
+2021-06-25  :12:13:45: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:13:45: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/bool_Rung', ... (5 bytes))
+2021-06-25  :12:13:45: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:13:45: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m2, 'Doorbell/bool_Rung', ... (3 bytes)) passes invariant.
+2021-06-25  :12:13:45: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:13:45: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m2, 'Doorbell/bool_Rung', ... (3 bytes))
+2021-06-25  :12:13:45: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:13:51: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'SecurityAlarm/bool_set/set', ... (4 bytes)): Violates Policy
+2021-06-25  :12:13:51: Time to Evaluate Policy: 0.001
+2021-06-25  :12:13:57: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BedroomLight/bool_On', ... (5 bytes)) passes invariant.
+2021-06-25  :12:13:57: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:13:57: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BedroomLight/bool_On', ... (5 bytes))
+2021-06-25  :12:13:57: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:14:03: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Thermostat/int_Temp/set', ... (2 bytes)): Violates Policy
+2021-06-25  :12:14:03: Time to Evaluate Policy: 0.001
+2021-06-25  :12:14:09: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'MicrowaveOven/int_Temp/set', ... (3 bytes)): Violates Policy
+2021-06-25  :12:14:09: Time to Evaluate Policy: 0.001
+2021-06-25  :12:14:15: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/str_mode', ... (3 bytes)) passes invariant.
+2021-06-25  :12:14:15: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:14:15: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/str_mode', ... (3 bytes))
+2021-06-25  :12:14:15: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:14:15: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Doorbell/str_mode', ... (3 bytes)) passes invariant.
+2021-06-25  :12:14:15: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:14:15: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Doorbell/str_mode', ... (3 bytes))
+2021-06-25  :12:14:15: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:14:21: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BedroomLight/bool_On/set', ... (5 bytes)): Violates Policy
+2021-06-25  :12:14:21: Time to Evaluate Policy: 0.001
+2021-06-25  :12:14:27: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'SmartTV/str_whats_playing/set', ... (16 bytes)): Violates Policy
+2021-06-25  :12:14:27: Time to Evaluate Policy: 0.001
+2021-06-25  :12:14:34: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BedroomFan/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:14:34: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:14:34: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BedroomFan/bool_On', ... (4 bytes))
+2021-06-25  :12:14:34: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:14:40: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BedroomFan/bool_On/set', ... (5 bytes)): Violates Policy
+2021-06-25  :12:14:40: Time to Evaluate Policy: 0.001
+2021-06-25  :12:14:46: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'TempSensor/int_Living_Room_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :12:14:46: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:14:46: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'TempSensor/int_Living_Room_Temp', ... (2 bytes))
+2021-06-25  :12:14:46: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:14:46: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'TempSensor/int_Living_Room_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :12:14:46: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:14:46: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'TempSensor/int_Living_Room_Temp', ... (2 bytes))
+2021-06-25  :12:14:46: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:14:52: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LivingRoomFan/bool_On/set', ... (5 bytes)): Violates Policy
+2021-06-25  :12:14:52: Time to Evaluate Policy: 0.000
+2021-06-25  :12:14:58: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'TempSensor/int_Living_Room_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :12:14:58: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:14:58: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'TempSensor/int_Living_Room_Temp', ... (2 bytes))
+2021-06-25  :12:14:58: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:14:58: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m2, 'TempSensor/int_Living_Room_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :12:14:58: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:14:58: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m2, 'TempSensor/int_Living_Room_Temp', ... (2 bytes))
+2021-06-25  :12:14:58: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:14:58: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LivingRoomFan/bool_On/set', ... (4 bytes)): Violates Policy
+2021-06-25  :12:14:58: Time to Evaluate Policy: 0.001
+2021-06-25  :12:14:58: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LivingRoomFan/bool_On/set', ... (4 bytes)): Violates Policy
+2021-06-25  :12:14:58: Time to Evaluate Policy: 0.001
+2021-06-25  :12:21:41: mosquitto version 2.0.7 terminating
+2021-06-25  :12:21:41: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :12:21:41: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :12:21:41: Error: No such file or directory.
+2021-07-15  :12:25:07: mosquitto version 2.0.7 starting
+2021-07-15  :12:25:07: Config loaded from ../testbed1_mosq.conf.
+2021-07-15  :12:25:07: Policies added:../testbed1_pol.pol
+2021-07-15  :12:25:07: Propositons added:../testbed1.prop
+2021-07-15  :12:25:07: Policy, invariant engine and state tracking created
+2021-07-15  :12:25:07: Opening ipv4 listen socket on port 1883.
+2021-07-15  :12:25:07: Opening ipv6 listen socket on port 1883.
+2021-07-15  :12:25:07: mosquitto version 2.0.7 running
+2021-07-15  :12:25:25: New connection from 192.168.0.51:55134 on port 1883.
+2021-07-15  :12:25:25: New client connected from 192.168.0.51:55134 as PARAPET_PROXY (p2, c1, k60, u'parapet').
+2021-07-15  :12:25:25: No will message specified.
+2021-07-15  :12:25:25: Sending CONNACK to PARAPET_PROXY (0, 0)
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	homeassistant/# (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 homeassistant/#
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	+/+/$homie (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 +/+/$homie
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	LivingRoomHumid/bool_On/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 LivingRoomHumid/bool_On/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	LivingRoomAC/bool_On/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 LivingRoomAC/bool_On/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	BedroomHumid/bool_On/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 BedroomHumid/bool_On/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	BedroomAC/bool_On/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 BedroomAC/bool_On/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	LivingRoomFan/bool_On/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 LivingRoomFan/bool_On/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	BedroomShades/bool_Closed/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 BedroomShades/bool_Closed/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	BedroomFan/bool_On/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 BedroomFan/bool_On/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	LivingRoomShades/bool_Closed/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 LivingRoomShades/bool_Closed/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	LivingRoomLight/bool_On/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 LivingRoomLight/bool_On/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	BedroomLight/bool_On/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 BedroomLight/bool_On/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	Thermostat/int_Temp/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 Thermostat/int_Temp/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	MicrowaveOven/int_Temp/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 MicrowaveOven/int_Temp/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	MicrowaveOven/bool_On/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 MicrowaveOven/bool_On/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	DoorLock/bool_Locked/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 DoorLock/bool_Locked/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	SecurityAlarm/bool_set/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 SecurityAlarm/bool_set/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	FrontPorchSecCamera/bool_On/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 FrontPorchSecCamera/bool_On/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	SecurityAlarm/bool_alarm/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 SecurityAlarm/bool_alarm/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	BackPorchSecCamera/bool_On/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 BackPorchSecCamera/bool_On/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	SmartTV/bool_On/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 SmartTV/bool_On/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	SmartTV/str_whats_playing/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 SmartTV/str_whats_playing/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	Doorbell/bool_Unlock/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 Doorbell/bool_Unlock/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	Doorbell/bool_Rung/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 Doorbell/bool_Rung/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	Doorbell/str_mode/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 Doorbell/str_mode/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:25: Received SUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:25:25: 	SmartHome/str_mode/set (QoS 1)
+2021-07-15  :12:25:25: PARAPET_PROXY 1 SmartHome/str_mode/set
+2021-07-15  :12:25:25: Sending SUBACK to PARAPET_PROXY
+2021-07-15  :12:25:28: New connection from 192.168.0.106:51638 on port 1883.
+2021-07-15  :12:25:28: New client connected from 192.168.0.106:51638 as Upstream_automation (p2, c1, k60, u'parapet').
+2021-07-15  :12:25:28: No will message specified.
+2021-07-15  :12:25:28: Sending CONNACK to Upstream_automation (0, 0)
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	homeassistant/# (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 homeassistant/#
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	+/+/$homie (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 +/+/$homie
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	LivingRoomAC/bool_On (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 LivingRoomAC/bool_On
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	LivingRoomHumid/bool_On (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 LivingRoomHumid/bool_On
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	BedroomHumid/bool_On (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 BedroomHumid/bool_On
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	BedroomAC/bool_On (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 BedroomAC/bool_On
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	LivingRoomFan/bool_On (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 LivingRoomFan/bool_On
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	LivingRoomLight/bool_On (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 LivingRoomLight/bool_On
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	BedroomFan/bool_On (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 BedroomFan/bool_On
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	LivingRoomShades/bool_Closed (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 LivingRoomShades/bool_Closed
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	BedroomLight/bool_On (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 BedroomLight/bool_On
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	BedroomShades/bool_Closed (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 BedroomShades/bool_Closed
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	Thermostat/int_Temp (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 Thermostat/int_Temp
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	SecurityAlarm/bool_set (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 SecurityAlarm/bool_set
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	MicrowaveOven/int_Temp (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 MicrowaveOven/int_Temp
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	DoorLock/bool_Locked (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 DoorLock/bool_Locked
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	SecurityAlarm/bool_alarm (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 SecurityAlarm/bool_alarm
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	MicrowaveOven/bool_On (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 MicrowaveOven/bool_On
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	FrontPorchSecCamera/bool_On (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 FrontPorchSecCamera/bool_On
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	BackPorchSecCamera/bool_On (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 BackPorchSecCamera/bool_On
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	SmartTV/bool_On (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 SmartTV/bool_On
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	SmartTV/str_whats_playing (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 SmartTV/str_whats_playing
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	TempSensor/int_Bedroom_Temp (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 TempSensor/int_Bedroom_Temp
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	TempSensor/int_Living_Room_Temp (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 TempSensor/int_Living_Room_Temp
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	Doorbell/bool_Unlock (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 Doorbell/bool_Unlock
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	Doorbell/bool_Rung (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 Doorbell/bool_Rung
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	Doorbell/str_mode (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 Doorbell/str_mode
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:25:28: Received SUBSCRIBE from Upstream_automation
+2021-07-15  :12:25:28: 	SmartHome/str_mode (QoS 1)
+2021-07-15  :12:25:28: Upstream_automation 1 SmartHome/str_mode
+2021-07-15  :12:25:28: Sending SUBACK to Upstream_automation
+2021-07-15  :12:26:25: Received PINGREQ from PARAPET_PROXY
+2021-07-15  :12:26:25: Sending PINGRESP to PARAPET_PROXY
+2021-07-15  :12:26:28: Received PINGREQ from Upstream_automation
+2021-07-15  :12:26:28: Sending PINGRESP to Upstream_automation
+2021-07-15  :12:26:30: Received PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On/set', ... (5 bytes))
+2021-07-15  :12:26:30: checking for policy compliance
+2021-07-15  :12:26:30: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On/set', ... (5 bytes)): Maintains Policy
+2021-07-15  :12:26:30: Time to Evaluate Policy: 0.000
+2021-07-15  :12:26:30: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On/set', ... (5 bytes))
+2021-07-15  :12:26:30: Sending PUBLISH to PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On/set', ... (5 bytes))
+2021-07-15  :12:26:30: Forwarding PUBLISH with QoS 1 
+2021-07-15  :12:26:30: Sending PUBACK to Upstream_automation (m1, rc0)
+2021-07-15  :12:26:30: Received PUBACK from PARAPET_PROXY (Mid: 1, RC:0)
+2021-07-15  :12:26:30: Received PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (5 bytes))
+2021-07-15  :12:26:30: checking for policy compliance
+2021-07-15  :12:26:30: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (5 bytes)) passes invariant.
+2021-07-15  :12:26:30: Time to Evaluate Invariants: 0.000
+2021-07-15  :12:26:30: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (5 bytes))
+2021-07-15  :12:26:30: Sending PUBLISH to Upstream_automation (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (5 bytes))
+2021-07-15  :12:26:30: Forwarding PUBLISH with QoS 1 
+2021-07-15  :12:26:30: Sending PUBACK to PARAPET_PROXY (m1, rc0)
+2021-07-15  :12:26:30: Received PUBACK from Upstream_automation (Mid: 1, RC:0)
+2021-07-15  :12:26:42: Received PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On/set', ... (4 bytes))
+2021-07-15  :12:26:42: checking for policy compliance
+2021-07-15  :12:26:42: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-07-15  :12:26:42: Time to Evaluate Policy: 0.001
+2021-07-15  :12:26:42: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On/set', ... (4 bytes))
+2021-07-15  :12:26:42: Sending PUBLISH to PARAPET_PROXY (d0, q1, r0, m2, 'BackPorchSecCamera/bool_On/set', ... (4 bytes))
+2021-07-15  :12:26:42: Forwarding PUBLISH with QoS 1 
+2021-07-15  :12:26:42: Sending PUBACK to Upstream_automation (m1, rc0)
+2021-07-15  :12:26:42: Received PUBACK from PARAPET_PROXY (Mid: 2, RC:0)
+2021-07-15  :12:26:42: Received PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes))
+2021-07-15  :12:26:42: checking for policy compliance
+2021-07-15  :12:26:42: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes)) passes invariant.
+2021-07-15  :12:26:42: Time to Evaluate Invariants: 0.001
+2021-07-15  :12:26:42: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes))
+2021-07-15  :12:26:42: Sending PUBLISH to Upstream_automation (d0, q1, r0, m2, 'BackPorchSecCamera/bool_On', ... (4 bytes))
+2021-07-15  :12:26:42: Forwarding PUBLISH with QoS 1 
+2021-07-15  :12:26:42: Sending PUBACK to PARAPET_PROXY (m1, rc0)
+2021-07-15  :12:26:42: Received PUBACK from Upstream_automation (Mid: 2, RC:0)
+2021-07-15  :12:27:42: Received PINGREQ from Upstream_automation
+2021-07-15  :12:27:42: Sending PINGRESP to Upstream_automation
+2021-07-15  :12:27:42: Received PINGREQ from PARAPET_PROXY
+2021-07-15  :12:27:42: Sending PINGRESP to PARAPET_PROXY
+2021-07-15  :12:28:41: Received PINGREQ from Upstream_automation
+2021-07-15  :12:28:41: Sending PINGRESP to Upstream_automation
+2021-07-15  :12:28:42: Received PINGREQ from PARAPET_PROXY
+2021-07-15  :12:28:42: Sending PINGRESP to PARAPET_PROXY
+2021-07-15  :12:29:08: Received PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On/set', ... (5 bytes))
+2021-07-15  :12:29:08: checking for policy compliance
+2021-07-15  :12:29:08: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On/set', ... (5 bytes)): Maintains Policy
+2021-07-15  :12:29:08: Time to Evaluate Policy: 0.001
+2021-07-15  :12:29:08: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On/set', ... (5 bytes))
+2021-07-15  :12:29:08: Sending PUBLISH to PARAPET_PROXY (d0, q1, r0, m3, 'BackPorchSecCamera/bool_On/set', ... (5 bytes))
+2021-07-15  :12:29:08: Forwarding PUBLISH with QoS 1 
+2021-07-15  :12:29:08: Sending PUBACK to Upstream_automation (m1, rc0)
+2021-07-15  :12:29:08: Received PUBACK from PARAPET_PROXY (Mid: 3, RC:0)
+2021-07-15  :12:29:08: Received PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (5 bytes))
+2021-07-15  :12:29:08: checking for policy compliance
+2021-07-15  :12:29:08: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (5 bytes)) passes invariant.
+2021-07-15  :12:29:08: Time to Evaluate Invariants: 0.001
+2021-07-15  :12:29:08: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (5 bytes))
+2021-07-15  :12:29:08: Sending PUBLISH to Upstream_automation (d0, q1, r0, m3, 'BackPorchSecCamera/bool_On', ... (5 bytes))
+2021-07-15  :12:29:08: Forwarding PUBLISH with QoS 1 
+2021-07-15  :12:29:08: Sending PUBACK to PARAPET_PROXY (m1, rc0)
+2021-07-15  :12:29:08: Received PUBACK from Upstream_automation (Mid: 3, RC:0)
+2021-07-15  :12:29:48: Received PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes))
+2021-07-15  :12:29:48: checking for policy compliance
+2021-07-15  :12:29:48: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes)) passes invariant.
+2021-07-15  :12:29:48: Time to Evaluate Invariants: 0.001
+2021-07-15  :12:29:48: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'BackPorchSecCamera/bool_On', ... (4 bytes))
+2021-07-15  :12:29:48: Sending PUBLISH to Upstream_automation (d0, q1, r0, m4, 'BackPorchSecCamera/bool_On', ... (4 bytes))
+2021-07-15  :12:29:48: Forwarding PUBLISH with QoS 1 
+2021-07-15  :12:29:48: Sending PUBACK to PARAPET_PROXY (m1, rc0)
+2021-07-15  :12:29:48: Received PUBACK from Upstream_automation (Mid: 4, RC:0)
+2021-07-15  :12:30:47: Received PINGREQ from Upstream_automation
+2021-07-15  :12:30:47: Sending PINGRESP to Upstream_automation
+2021-07-15  :12:30:47: Received PINGREQ from PARAPET_PROXY
+2021-07-15  :12:30:47: Sending PINGRESP to PARAPET_PROXY
+2021-07-15  :12:31:47: Received PINGREQ from Upstream_automation
+2021-07-15  :12:31:47: Sending PINGRESP to Upstream_automation
+2021-07-15  :12:31:47: Received PINGREQ from PARAPET_PROXY
+2021-07-15  :12:31:47: Sending PINGRESP to PARAPET_PROXY
+2021-07-15  :12:32:47: Received PINGREQ from Upstream_automation
+2021-07-15  :12:32:47: Sending PINGRESP to Upstream_automation
+2021-07-15  :12:32:47: Received PINGREQ from PARAPET_PROXY
+2021-07-15  :12:32:47: Sending PINGRESP to PARAPET_PROXY
+2021-07-15  :12:33:24: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:24: 	LivingRoomAC/bool_On
+2021-07-15  :12:33:24: Upstream_automation LivingRoomAC/bool_On
+2021-07-15  :12:33:24: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	BedroomAC/bool_On
+2021-07-15  :12:33:25: Upstream_automation BedroomAC/bool_On
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	LivingRoomHumid/bool_On
+2021-07-15  :12:33:25: Upstream_automation LivingRoomHumid/bool_On
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	BedroomHumid/bool_On
+2021-07-15  :12:33:25: Upstream_automation BedroomHumid/bool_On
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	LivingRoomFan/bool_On
+2021-07-15  :12:33:25: Upstream_automation LivingRoomFan/bool_On
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	BedroomFan/bool_On
+2021-07-15  :12:33:25: Upstream_automation BedroomFan/bool_On
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	LivingRoomLight/bool_On
+2021-07-15  :12:33:25: Upstream_automation LivingRoomLight/bool_On
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	BedroomLight/bool_On
+2021-07-15  :12:33:25: Upstream_automation BedroomLight/bool_On
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	LivingRoomShades/bool_Closed
+2021-07-15  :12:33:25: Upstream_automation LivingRoomShades/bool_Closed
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	BedroomShades/bool_Closed
+2021-07-15  :12:33:25: Upstream_automation BedroomShades/bool_Closed
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	Thermostat/int_Temp
+2021-07-15  :12:33:25: Upstream_automation Thermostat/int_Temp
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	MicrowaveOven/int_Temp
+2021-07-15  :12:33:25: Upstream_automation MicrowaveOven/int_Temp
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	MicrowaveOven/bool_On
+2021-07-15  :12:33:25: Upstream_automation MicrowaveOven/bool_On
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	DoorLock/bool_Locked
+2021-07-15  :12:33:25: Upstream_automation DoorLock/bool_Locked
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	SecurityAlarm/bool_set
+2021-07-15  :12:33:25: Upstream_automation SecurityAlarm/bool_set
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	SecurityAlarm/bool_alarm
+2021-07-15  :12:33:25: Upstream_automation SecurityAlarm/bool_alarm
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	FrontPorchSecCamera/bool_On
+2021-07-15  :12:33:25: Upstream_automation FrontPorchSecCamera/bool_On
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	BackPorchSecCamera/bool_On
+2021-07-15  :12:33:25: Upstream_automation BackPorchSecCamera/bool_On
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	SmartTV/bool_On
+2021-07-15  :12:33:25: Upstream_automation SmartTV/bool_On
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	SmartTV/str_whats_playing
+2021-07-15  :12:33:25: Upstream_automation SmartTV/str_whats_playing
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	TempSensor/int_Bedroom_Temp
+2021-07-15  :12:33:25: Upstream_automation TempSensor/int_Bedroom_Temp
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	TempSensor/int_Living_Room_Temp
+2021-07-15  :12:33:25: Upstream_automation TempSensor/int_Living_Room_Temp
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	Doorbell/bool_Unlock
+2021-07-15  :12:33:25: Upstream_automation Doorbell/bool_Unlock
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	Doorbell/bool_Rung
+2021-07-15  :12:33:25: Upstream_automation Doorbell/bool_Rung
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	Doorbell/str_mode
+2021-07-15  :12:33:25: Upstream_automation Doorbell/str_mode
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	SmartHome/str_mode
+2021-07-15  :12:33:25: Upstream_automation SmartHome/str_mode
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	+/+/$homie
+2021-07-15  :12:33:25: Upstream_automation +/+/$homie
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received UNSUBSCRIBE from Upstream_automation
+2021-07-15  :12:33:25: 	homeassistant/#
+2021-07-15  :12:33:25: Upstream_automation homeassistant/#
+2021-07-15  :12:33:25: Sending UNSUBACK to Upstream_automation
+2021-07-15  :12:33:25: Received DISCONNECT from Upstream_automation
+2021-07-15  :12:33:25: Client Upstream_automation disconnected.
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	LivingRoomAC/bool_On/set
+2021-07-15  :12:33:35: PARAPET_PROXY LivingRoomAC/bool_On/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	BedroomAC/bool_On/set
+2021-07-15  :12:33:35: PARAPET_PROXY BedroomAC/bool_On/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	LivingRoomHumid/bool_On/set
+2021-07-15  :12:33:35: PARAPET_PROXY LivingRoomHumid/bool_On/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	BedroomHumid/bool_On/set
+2021-07-15  :12:33:35: PARAPET_PROXY BedroomHumid/bool_On/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	LivingRoomFan/bool_On/set
+2021-07-15  :12:33:35: PARAPET_PROXY LivingRoomFan/bool_On/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	BedroomFan/bool_On/set
+2021-07-15  :12:33:35: PARAPET_PROXY BedroomFan/bool_On/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	LivingRoomLight/bool_On/set
+2021-07-15  :12:33:35: PARAPET_PROXY LivingRoomLight/bool_On/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	BedroomLight/bool_On/set
+2021-07-15  :12:33:35: PARAPET_PROXY BedroomLight/bool_On/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	LivingRoomShades/bool_Closed/set
+2021-07-15  :12:33:35: PARAPET_PROXY LivingRoomShades/bool_Closed/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	BedroomShades/bool_Closed/set
+2021-07-15  :12:33:35: PARAPET_PROXY BedroomShades/bool_Closed/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	Thermostat/int_Temp/set
+2021-07-15  :12:33:35: PARAPET_PROXY Thermostat/int_Temp/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	MicrowaveOven/int_Temp/set
+2021-07-15  :12:33:35: PARAPET_PROXY MicrowaveOven/int_Temp/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	MicrowaveOven/bool_On/set
+2021-07-15  :12:33:35: PARAPET_PROXY MicrowaveOven/bool_On/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	DoorLock/bool_Locked/set
+2021-07-15  :12:33:35: PARAPET_PROXY DoorLock/bool_Locked/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	SecurityAlarm/bool_set/set
+2021-07-15  :12:33:35: PARAPET_PROXY SecurityAlarm/bool_set/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	SecurityAlarm/bool_alarm/set
+2021-07-15  :12:33:35: PARAPET_PROXY SecurityAlarm/bool_alarm/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	FrontPorchSecCamera/bool_On/set
+2021-07-15  :12:33:35: PARAPET_PROXY FrontPorchSecCamera/bool_On/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	BackPorchSecCamera/bool_On/set
+2021-07-15  :12:33:35: PARAPET_PROXY BackPorchSecCamera/bool_On/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	SmartTV/bool_On/set
+2021-07-15  :12:33:35: PARAPET_PROXY SmartTV/bool_On/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	SmartTV/str_whats_playing/set
+2021-07-15  :12:33:35: PARAPET_PROXY SmartTV/str_whats_playing/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	Doorbell/bool_Unlock/set
+2021-07-15  :12:33:35: PARAPET_PROXY Doorbell/bool_Unlock/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	Doorbell/bool_Rung/set
+2021-07-15  :12:33:35: PARAPET_PROXY Doorbell/bool_Rung/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	Doorbell/str_mode/set
+2021-07-15  :12:33:35: PARAPET_PROXY Doorbell/str_mode/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	SmartHome/str_mode/set
+2021-07-15  :12:33:35: PARAPET_PROXY SmartHome/str_mode/set
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	+/+/$homie
+2021-07-15  :12:33:35: PARAPET_PROXY +/+/$homie
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received UNSUBSCRIBE from PARAPET_PROXY
+2021-07-15  :12:33:35: 	homeassistant/#
+2021-07-15  :12:33:35: PARAPET_PROXY homeassistant/#
+2021-07-15  :12:33:35: Sending UNSUBACK to PARAPET_PROXY
+2021-07-15  :12:33:35: Received DISCONNECT from PARAPET_PROXY
+2021-07-15  :12:33:35: Client PARAPET_PROXY disconnected.
+2021-07-15  :12:33:40: mosquitto version 2.0.7 terminating
+2021-07-15  :12:33:40: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-07-15  :12:33:40: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-07-15  :12:33:40: Error: No such file or directory.

@@ -1,0 +1,24 @@
+2023-07-04  :10:48:48: mosquitto version 2.0.7 starting
+2023-07-04  :10:48:48: Config loaded from ../test_system.conf.
+2023-07-04  :10:48:48: Policies added:../testbed1_pol.pol
+2023-07-04  :10:48:48: Propositons added:../testbed1.prop
+2023-07-04  :10:48:48: Policy, invariant engine and state tracking created
+2023-07-04  :10:48:48: Opening ipv4 listen socket on port 1883.
+2023-07-04  :10:48:48: Opening ipv6 listen socket on port 1883.
+2023-07-04  :10:48:48: Error: Unable to load CA certificates. Check cafile "../../certs/ca.crt".
+2023-07-04  :10:48:48: Error: Unable to load server certificate "../../certs/server.crt". Check certfile.
+2023-07-04  :10:48:48: OpenSSL Error[0]: error:02001002:system library:fopen:No such file or directory
+2023-07-04  :10:48:48: OpenSSL Error[1]: error:20074002:BIO routines:file_ctrl:system lib
+2023-07-04  :10:48:48: OpenSSL Error[2]: error:140DC002:SSL routines:use_certificate_chain_file:system lib
+2023-07-04  :10:49:28: mosquitto version 2.0.7 starting
+2023-07-04  :10:49:28: Config loaded from ../test_system.conf.
+2023-07-04  :10:49:28: Policies added:../testbed1_pol.pol
+2023-07-04  :10:49:28: Propositons added:../testbed1.prop
+2023-07-04  :10:49:28: Policy, invariant engine and state tracking created
+2023-07-04  :10:49:28: Opening ipv4 listen socket on port 1883.
+2023-07-04  :10:49:28: Opening ipv6 listen socket on port 1883.
+2023-07-04  :10:49:28: mosquitto version 2.0.7 running
+2023-07-04  :10:49:56: mosquitto version 2.0.7 terminating
+2023-07-04  :10:49:56: Saving in-memory database to ./persist/mosquitto.db.
+2023-07-04  :10:49:56: Error saving in-memory database, unable to open ./persist/mosquitto.db.new for writing.
+2023-07-04  :10:49:56: Error: No such file or directory.

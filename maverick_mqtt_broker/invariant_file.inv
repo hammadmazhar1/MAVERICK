@@ -1,0 +1,2 @@
+BulbIsAlwaysOn;(Bulb1/int_Bulb_Level/set,1):(Bulb1/int_Bulb_Level,50)
+BulbIsNeverWhite;(Bulb1/int_Bulb_Temp/set,50):(Bulb1/int_Bulb_Temp,50)

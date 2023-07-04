@@ -1,0 +1,634 @@
+2021-06-25  :13:25:56: mosquitto version 2.0.7 starting
+2021-06-25  :13:25:56: Config loaded from ../testbed3_mosq.conf.
+2021-06-25  :13:25:56: Policies added:../testbed3_pol.pol
+2021-06-25  :13:25:56: Propositons added:../testbed3.prop
+2021-06-25  :13:25:56: Policy, invariant engine and state tracking created
+2021-06-25  :13:25:56: Opening ipv4 listen socket on port 1883.
+2021-06-25  :13:25:56: Opening ipv6 listen socket on port 1883.
+2021-06-25  :13:25:56: mosquitto version 2.0.7 running
+2021-06-25  :13:26:25: New connection from 192.168.0.106:38476 on port 1883.
+2021-06-25  :13:26:25: New client connected from 192.168.0.106:38476 as Upstream_automation (p2, c1, k60, u'parapet').
+2021-06-25  :13:26:46: Client Upstream_automation closed its connection.
+2021-06-25  :13:26:50: New connection from 192.168.0.51:58920 on port 1883.
+2021-06-25  :13:26:51: New client connected from 192.168.0.51:58920 as PARAPET_PROXY (p2, c1, k60, u'parapet').
+2021-06-25  :13:27:33: New connection from 192.168.0.106:38478 on port 1883.
+2021-06-25  :13:27:34: New client connected from 192.168.0.106:38478 as Upstream_automation (p2, c1, k60, u'parapet').
+2021-06-25  :13:28:47: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:28:47: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:28:47: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes))
+2021-06-25  :13:28:47: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:28:47: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:28:47: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:28:47: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes))
+2021-06-25  :13:28:47: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:28:53: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Doorbell/bool_Rung/set', ... (5 bytes)): Maintains Policy
+2021-06-25  :13:28:53: Time to Evaluate Policy: 0.000
+2021-06-25  :13:28:53: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Doorbell/bool_Rung/set', ... (5 bytes))
+2021-06-25  :13:28:53: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:28:59: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Heater/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :13:28:59: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:28:59: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Heater/bool_On', ... (4 bytes))
+2021-06-25  :13:28:59: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:29:05: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Doorbell/bool_Rung/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :13:29:05: Time to Evaluate Policy: 0.000
+2021-06-25  :13:29:05: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Doorbell/bool_Rung/set', ... (4 bytes))
+2021-06-25  :13:29:05: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:29:06: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Doorbell/bool_Rung', ... (2 bytes)) passes invariant.
+2021-06-25  :13:29:06: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:29:06: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Doorbell/bool_Rung', ... (2 bytes))
+2021-06-25  :13:29:06: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:29:12: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Doorbell/bool_Unlock/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :13:29:12: Time to Evaluate Policy: 0.000
+2021-06-25  :13:29:12: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Doorbell/bool_Unlock/set', ... (4 bytes))
+2021-06-25  :13:29:12: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:29:12: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Doorbell/bool_Unlock', ... (2 bytes)) passes invariant.
+2021-06-25  :13:29:12: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:29:12: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Doorbell/bool_Unlock', ... (2 bytes))
+2021-06-25  :13:29:12: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:29:18: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'DoorLock/bool_Locked', ... (4 bytes)) passes invariant.
+2021-06-25  :13:29:18: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:29:18: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'DoorLock/bool_Locked', ... (4 bytes))
+2021-06-25  :13:29:18: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:29:18: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'DoorLock/bool_Locked', ... (2 bytes)) passes invariant.
+2021-06-25  :13:29:18: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:29:18: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'DoorLock/bool_Locked', ... (2 bytes))
+2021-06-25  :13:29:18: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:29:24: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'LightBulb/bool_On', ... (5 bytes)) passes invariant.
+2021-06-25  :13:29:24: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:29:24: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'LightBulb/bool_On', ... (5 bytes))
+2021-06-25  :13:29:24: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:29:24: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'LightBulb/bool_On', ... (3 bytes)) passes invariant.
+2021-06-25  :13:29:24: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:29:24: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'LightBulb/bool_On', ... (3 bytes))
+2021-06-25  :13:29:24: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:29:30: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'DoorLock/bool_Locked', ... (4 bytes)) passes invariant.
+2021-06-25  :13:29:30: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:29:30: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'DoorLock/bool_Locked', ... (4 bytes))
+2021-06-25  :13:29:30: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:29:36: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Thermostat/int_Temp/set', ... (2 bytes)): Maintains Policy
+2021-06-25  :13:29:36: Time to Evaluate Policy: 0.000
+2021-06-25  :13:29:36: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Thermostat/int_Temp/set', ... (2 bytes))
+2021-06-25  :13:29:36: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:29:36: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Thermostat/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:29:36: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:29:36: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Thermostat/int_Temp', ... (2 bytes))
+2021-06-25  :13:29:36: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:29:42: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Shades/bool_Closed', ... (5 bytes)) passes invariant.
+2021-06-25  :13:29:42: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:29:42: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Shades/bool_Closed', ... (5 bytes))
+2021-06-25  :13:29:42: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:29:48: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:29:48: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:29:48: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes))
+2021-06-25  :13:29:48: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:29:48: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:29:48: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:29:48: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes))
+2021-06-25  :13:29:48: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:29:54: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Thermostat/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:29:54: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:29:54: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Thermostat/int_Temp', ... (2 bytes))
+2021-06-25  :13:29:54: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:29:54: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m2, 'Thermostat/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:29:54: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:29:54: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m2, 'Thermostat/int_Temp', ... (2 bytes))
+2021-06-25  :13:29:54: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:00: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'SmartHome/str_mode', ... (4 bytes)) passes invariant.
+2021-06-25  :13:30:00: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:30:00: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'SmartHome/str_mode', ... (4 bytes))
+2021-06-25  :13:30:00: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:00: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'SmartHome/str_mode', ... (4 bytes)) passes invariant.
+2021-06-25  :13:30:00: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:30:00: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'SmartHome/str_mode', ... (4 bytes))
+2021-06-25  :13:30:00: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:06: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:30:06: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:30:06: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes))
+2021-06-25  :13:30:06: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:06: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:30:06: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:30:06: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes))
+2021-06-25  :13:30:06: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:06: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'AirConditioner/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :13:30:06: Time to Evaluate Policy: 0.000
+2021-06-25  :13:30:06: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'AirConditioner/bool_On/set', ... (4 bytes))
+2021-06-25  :13:30:06: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:06: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'AirConditioner/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :13:30:06: Time to Evaluate Policy: 0.000
+2021-06-25  :13:30:06: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'AirConditioner/bool_On/set', ... (4 bytes))
+2021-06-25  :13:30:06: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:06: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'AirConditioner/bool_On', ... (2 bytes)) passes invariant.
+2021-06-25  :13:30:06: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:30:06: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'AirConditioner/bool_On', ... (2 bytes))
+2021-06-25  :13:30:06: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:12: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/bool_Rung', ... (5 bytes)) passes invariant.
+2021-06-25  :13:30:12: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:30:12: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/bool_Rung', ... (5 bytes))
+2021-06-25  :13:30:12: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:12: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Doorbell/bool_Rung', ... (3 bytes)) passes invariant.
+2021-06-25  :13:30:12: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:30:12: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Doorbell/bool_Rung', ... (3 bytes))
+2021-06-25  :13:30:12: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:25: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Shades/bool_Closed', ... (4 bytes)) passes invariant.
+2021-06-25  :13:30:25: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:30:25: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Shades/bool_Closed', ... (4 bytes))
+2021-06-25  :13:30:25: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:25: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Shades/bool_Closed', ... (2 bytes)) passes invariant.
+2021-06-25  :13:30:25: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:30:25: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Shades/bool_Closed', ... (2 bytes))
+2021-06-25  :13:30:25: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:31: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'SmokeDetectorState/bool_Smoke_Detected', ... (4 bytes)) passes invariant.
+2021-06-25  :13:30:31: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:30:31: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'SmokeDetectorState/bool_Smoke_Detected', ... (4 bytes))
+2021-06-25  :13:30:31: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:37: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'TemperatureSensorState/int_Temp', ... (1 bytes)) passes invariant.
+2021-06-25  :13:30:37: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:30:37: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'TemperatureSensorState/int_Temp', ... (1 bytes))
+2021-06-25  :13:30:37: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:37: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'TemperatureSensorState/int_Temp', ... (1 bytes)) passes invariant.
+2021-06-25  :13:30:37: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:30:37: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'TemperatureSensorState/int_Temp', ... (1 bytes))
+2021-06-25  :13:30:37: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:37: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Heater/bool_On/set', ... (4 bytes)): Violates Policy
+2021-06-25  :13:30:37: Time to Evaluate Policy: 0.000
+2021-06-25  :13:30:37: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Heater/bool_On/set', ... (4 bytes)): Violates Policy
+2021-06-25  :13:30:37: Time to Evaluate Policy: 0.000
+2021-06-25  :13:30:43: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'AirConditioner/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :13:30:43: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:30:43: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'AirConditioner/bool_On', ... (4 bytes))
+2021-06-25  :13:30:43: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:55: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:30:55: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:30:55: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes))
+2021-06-25  :13:30:55: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:55: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:30:55: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:30:55: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes))
+2021-06-25  :13:30:55: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:30:55: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Heater/bool_On/set', ... (4 bytes)): Violates Policy
+2021-06-25  :13:30:55: Time to Evaluate Policy: 0.000
+2021-06-25  :13:30:55: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Heater/bool_On/set', ... (4 bytes)): Violates Policy
+2021-06-25  :13:30:55: Time to Evaluate Policy: 0.000
+2021-06-25  :13:31:07: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Thermostat/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:31:07: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:31:07: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Thermostat/int_Temp', ... (2 bytes))
+2021-06-25  :13:31:07: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:31:07: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Thermostat/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:31:07: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:31:07: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Thermostat/int_Temp', ... (2 bytes))
+2021-06-25  :13:31:07: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:31:13: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:31:13: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:31:13: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes))
+2021-06-25  :13:31:13: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:31:13: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m2, 'TemperatureSensorState/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:31:13: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:31:13: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m2, 'TemperatureSensorState/int_Temp', ... (2 bytes))
+2021-06-25  :13:31:13: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:31:19: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Thermostat/int_Temp/set', ... (2 bytes)): Maintains Policy
+2021-06-25  :13:31:19: Time to Evaluate Policy: 0.001
+2021-06-25  :13:31:19: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Thermostat/int_Temp/set', ... (2 bytes))
+2021-06-25  :13:31:19: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:31:19: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Thermostat/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:31:19: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:31:19: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Thermostat/int_Temp', ... (2 bytes))
+2021-06-25  :13:31:19: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:31:32: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'AirConditioner/bool_On/set', ... (5 bytes)): Maintains Policy
+2021-06-25  :13:31:32: Time to Evaluate Policy: 0.001
+2021-06-25  :13:31:32: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'AirConditioner/bool_On/set', ... (5 bytes))
+2021-06-25  :13:31:32: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:31:32: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'AirConditioner/bool_On', ... (3 bytes)) passes invariant.
+2021-06-25  :13:31:32: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:31:32: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'AirConditioner/bool_On', ... (3 bytes))
+2021-06-25  :13:31:32: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:31:38: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'SecurityCamera/bool_On/set', ... (5 bytes)): Maintains Policy
+2021-06-25  :13:31:38: Time to Evaluate Policy: 0.001
+2021-06-25  :13:31:38: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'SecurityCamera/bool_On/set', ... (5 bytes))
+2021-06-25  :13:31:38: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:31:38: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'SecurityCamera/bool_On', ... (3 bytes)) passes invariant.
+2021-06-25  :13:31:38: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:31:38: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'SecurityCamera/bool_On', ... (3 bytes))
+2021-06-25  :13:31:38: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:31:44: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Thermostat/int_Temp', ... (1 bytes)) passes invariant.
+2021-06-25  :13:31:44: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:31:44: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Thermostat/int_Temp', ... (1 bytes))
+2021-06-25  :13:31:44: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:31:44: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Thermostat/int_Temp', ... (1 bytes)) passes invariant.
+2021-06-25  :13:31:44: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:31:44: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Thermostat/int_Temp', ... (1 bytes))
+2021-06-25  :13:31:44: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:31:50: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'SecurityAlarm/bool_Sound/set', ... (2 bytes)): Maintains Policy
+2021-06-25  :13:31:50: Time to Evaluate Policy: 0.001
+2021-06-25  :13:31:50: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'SecurityAlarm/bool_Sound/set', ... (2 bytes))
+2021-06-25  :13:31:50: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:32:08: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'OpenCloseSensorState/bool_Closed', ... (4 bytes)) passes invariant.
+2021-06-25  :13:32:08: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:32:08: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'OpenCloseSensorState/bool_Closed', ... (4 bytes))
+2021-06-25  :13:32:08: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:32:14: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'OpenCloseSensorState/bool_Closed', ... (4 bytes)) passes invariant.
+2021-06-25  :13:32:14: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:32:14: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'OpenCloseSensorState/bool_Closed', ... (4 bytes))
+2021-06-25  :13:32:14: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:32:20: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Thermostat/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:32:20: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:32:20: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Thermostat/int_Temp', ... (2 bytes))
+2021-06-25  :13:32:20: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:32:20: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Thermostat/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:32:20: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:32:20: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Thermostat/int_Temp', ... (2 bytes))
+2021-06-25  :13:32:20: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:32:26: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'CODetectorState/bool_High', ... (4 bytes)) passes invariant.
+2021-06-25  :13:32:26: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:32:26: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'CODetectorState/bool_High', ... (4 bytes))
+2021-06-25  :13:32:26: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:32:32: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/bool_Unlock', ... (4 bytes)) passes invariant.
+2021-06-25  :13:32:32: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:32:32: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/bool_Unlock', ... (4 bytes))
+2021-06-25  :13:32:32: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:32:39: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'DoorLock/bool_Locked', ... (4 bytes)) passes invariant.
+2021-06-25  :13:32:39: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:32:39: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'DoorLock/bool_Locked', ... (4 bytes))
+2021-06-25  :13:32:39: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:32:45: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'SecurityCamera/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :13:32:45: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:32:45: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'SecurityCamera/bool_On', ... (4 bytes))
+2021-06-25  :13:32:45: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:32:45: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'SecurityCamera/bool_On', ... (2 bytes)) passes invariant.
+2021-06-25  :13:32:45: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:32:45: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'SecurityCamera/bool_On', ... (2 bytes))
+2021-06-25  :13:32:45: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:32:51: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:32:51: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:32:51: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes))
+2021-06-25  :13:32:51: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:32:51: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:32:51: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:32:51: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes))
+2021-06-25  :13:32:51: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:32:51: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Heater/bool_On/set', ... (4 bytes)): Violates Policy
+2021-06-25  :13:32:51: Time to Evaluate Policy: 0.000
+2021-06-25  :13:32:51: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Heater/bool_On/set', ... (4 bytes)): Violates Policy
+2021-06-25  :13:32:51: Time to Evaluate Policy: 0.000
+2021-06-25  :13:32:57: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'DoorLock/bool_Locked', ... (4 bytes)) passes invariant.
+2021-06-25  :13:32:57: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:32:57: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'DoorLock/bool_Locked', ... (4 bytes))
+2021-06-25  :13:32:57: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:33:03: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'MotionSensorState/bool_motion_sensed', ... (4 bytes)) violates invariant. Sending corrective actions
+2021-06-25  :13:33:03: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:33:03: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'MotionSensorState/bool_motion_sensed', ... (4 bytes))
+2021-06-25  :13:33:03: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:33:03: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'MotionSensorState/bool_motion_sensed', ... (2 bytes)) violates invariant. Sending corrective actions
+2021-06-25  :13:33:03: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:33:03: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'MotionSensorState/bool_motion_sensed', ... (2 bytes))
+2021-06-25  :13:33:03: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:33:03: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'LightBulb/bool_On', ... (2 bytes)) passes invariant.
+2021-06-25  :13:33:03: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:33:03: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'LightBulb/bool_On', ... (2 bytes))
+2021-06-25  :13:33:03: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:33:03: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LightBulb/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :13:33:03: Time to Evaluate Policy: 0.000
+2021-06-25  :13:33:03: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LightBulb/bool_On/set', ... (4 bytes))
+2021-06-25  :13:33:03: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:33:03: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LightBulb/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :13:33:03: Time to Evaluate Policy: 0.000
+2021-06-25  :13:33:03: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LightBulb/bool_On/set', ... (4 bytes))
+2021-06-25  :13:33:03: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:33:09: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Heater/bool_On/set', ... (4 bytes)): Violates Policy
+2021-06-25  :13:33:09: Time to Evaluate Policy: 0.001
+2021-06-25  :13:33:15: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'SmartHome/str_mode', ... (4 bytes)) passes invariant.
+2021-06-25  :13:33:15: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:33:15: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'SmartHome/str_mode', ... (4 bytes))
+2021-06-25  :13:33:15: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:33:15: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'SmartHome/str_mode', ... (4 bytes)) passes invariant.
+2021-06-25  :13:33:15: Time to Evaluate Invariants: 0.000
+2021-06-25  :13:33:15: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'SmartHome/str_mode', ... (4 bytes))
+2021-06-25  :13:33:15: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:33:15: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'DoorLock/bool_Locked/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :13:33:15: Time to Evaluate Policy: 0.000
+2021-06-25  :13:33:15: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'DoorLock/bool_Locked/set', ... (4 bytes))
+2021-06-25  :13:33:15: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:33:21: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Heater/bool_On/set', ... (4 bytes)): Violates Policy
+2021-06-25  :13:33:21: Time to Evaluate Policy: 0.001
+2021-06-25  :13:33:27: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/bool_Unlock', ... (4 bytes)) passes invariant.
+2021-06-25  :13:33:27: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:33:27: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/bool_Unlock', ... (4 bytes))
+2021-06-25  :13:33:27: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:33:33: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'MotionSensorState/bool_motion_sensed', ... (4 bytes)) passes invariant.
+2021-06-25  :13:33:33: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:33:33: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'MotionSensorState/bool_motion_sensed', ... (4 bytes))
+2021-06-25  :13:33:33: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:33:33: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LightBulb/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :13:33:33: Time to Evaluate Policy: 0.000
+2021-06-25  :13:33:33: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LightBulb/bool_On/set', ... (4 bytes))
+2021-06-25  :13:33:33: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:33:39: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Shades/bool_Closed/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :13:33:39: Time to Evaluate Policy: 0.001
+2021-06-25  :13:33:39: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Shades/bool_Closed/set', ... (4 bytes))
+2021-06-25  :13:33:39: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:33:45: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:33:45: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:33:45: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes))
+2021-06-25  :13:33:45: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:33:45: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :13:33:45: Time to Evaluate Invariants: 0.001
+2021-06-25  :13:33:45: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'TemperatureSensorState/int_Temp', ... (2 bytes))
+2021-06-25  :13:33:45: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:55:56: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :13:55:56: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :13:55:56: Error: No such file or directory.
+2021-06-25  :14:25:57: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :14:25:57: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :14:25:57: Error: No such file or directory.
+2021-06-25  :14:55:58: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :14:55:58: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :14:55:58: Error: No such file or directory.
+2021-06-25  :15:25:59: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :15:25:59: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :15:25:59: Error: No such file or directory.
+2021-06-25  :15:56:00: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :15:56:00: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :15:56:00: Error: No such file or directory.
+2021-06-25  :16:26:01: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :16:26:01: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :16:26:01: Error: No such file or directory.
+2021-06-25  :16:56:02: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :16:56:02: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :16:56:02: Error: No such file or directory.
+2021-06-25  :17:26:03: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :17:26:03: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :17:26:03: Error: No such file or directory.
+2021-06-25  :17:56:04: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :17:56:04: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :17:56:04: Error: No such file or directory.
+2021-06-25  :18:26:05: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :18:26:05: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :18:26:05: Error: No such file or directory.
+2021-06-25  :18:56:06: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :18:56:06: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :18:56:06: Error: No such file or directory.
+2021-06-25  :19:26:07: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :19:26:07: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :19:26:07: Error: No such file or directory.
+2021-06-25  :19:56:08: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :19:56:08: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :19:56:08: Error: No such file or directory.
+2021-06-25  :20:26:09: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :20:26:09: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :20:26:09: Error: No such file or directory.
+2021-06-25  :20:56:10: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :20:56:10: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :20:56:10: Error: No such file or directory.
+2021-06-25  :21:26:11: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :21:26:11: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :21:26:11: Error: No such file or directory.
+2021-06-25  :21:56:12: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :21:56:12: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :21:56:12: Error: No such file or directory.
+2021-06-25  :22:26:13: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :22:26:13: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :22:26:13: Error: No such file or directory.
+2021-06-25  :22:56:14: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :22:56:14: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :22:56:14: Error: No such file or directory.
+2021-06-25  :23:26:15: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :23:26:15: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :23:26:15: Error: No such file or directory.
+2021-06-25  :23:56:16: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :23:56:16: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :23:56:16: Error: No such file or directory.
+2021-06-26  :00:26:17: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :00:26:17: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :00:26:17: Error: No such file or directory.
+2021-06-26  :00:56:18: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :00:56:18: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :00:56:18: Error: No such file or directory.
+2021-06-26  :01:26:19: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :01:26:19: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :01:26:19: Error: No such file or directory.
+2021-06-26  :01:56:20: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :01:56:20: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :01:56:20: Error: No such file or directory.
+2021-06-26  :02:26:21: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :02:26:21: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :02:26:21: Error: No such file or directory.
+2021-06-26  :02:56:22: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :02:56:22: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :02:56:22: Error: No such file or directory.
+2021-06-26  :03:26:23: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :03:26:23: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :03:26:23: Error: No such file or directory.
+2021-06-26  :03:56:24: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :03:56:24: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :03:56:24: Error: No such file or directory.
+2021-06-26  :04:26:25: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :04:26:25: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :04:26:25: Error: No such file or directory.
+2021-06-26  :04:56:26: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :04:56:26: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :04:56:26: Error: No such file or directory.
+2021-06-26  :05:26:27: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :05:26:27: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :05:26:27: Error: No such file or directory.
+2021-06-26  :05:56:28: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :05:56:28: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :05:56:28: Error: No such file or directory.
+2021-06-26  :06:26:29: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :06:26:29: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :06:26:29: Error: No such file or directory.
+2021-06-26  :06:56:30: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :06:56:30: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :06:56:30: Error: No such file or directory.
+2021-06-26  :07:00:00: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Shades/bool_Closed/set', ... (5 bytes)): Maintains Policy
+2021-06-26  :07:00:00: Time to Evaluate Policy: 0.001
+2021-06-26  :07:00:00: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Shades/bool_Closed/set', ... (5 bytes))
+2021-06-26  :07:00:00: Forwarding PUBLISH with QoS 1 
+2021-06-26  :07:00:00: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Shades/bool_Closed', ... (3 bytes)) passes invariant.
+2021-06-26  :07:00:00: Time to Evaluate Invariants: 0.001
+2021-06-26  :07:00:00: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Shades/bool_Closed', ... (3 bytes))
+2021-06-26  :07:00:00: Forwarding PUBLISH with QoS 1 
+2021-06-26  :07:26:31: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :07:26:31: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :07:26:31: Error: No such file or directory.
+2021-06-26  :07:56:32: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :07:56:32: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :07:56:32: Error: No such file or directory.
+2021-06-26  :08:00:00: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Shades/bool_Closed/set', ... (5 bytes)): Maintains Policy
+2021-06-26  :08:00:00: Time to Evaluate Policy: 0.001
+2021-06-26  :08:00:00: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Shades/bool_Closed/set', ... (5 bytes))
+2021-06-26  :08:00:00: Forwarding PUBLISH with QoS 1 
+2021-06-26  :08:26:33: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :08:26:33: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :08:26:33: Error: No such file or directory.
+2021-06-26  :08:56:34: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :08:56:34: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :08:56:34: Error: No such file or directory.
+2021-06-26  :09:00:00: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Shades/bool_Closed/set', ... (5 bytes)): Maintains Policy
+2021-06-26  :09:00:00: Time to Evaluate Policy: 0.001
+2021-06-26  :09:00:00: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Shades/bool_Closed/set', ... (5 bytes))
+2021-06-26  :09:00:00: Forwarding PUBLISH with QoS 1 
+2021-06-26  :09:26:35: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :09:26:35: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :09:26:35: Error: No such file or directory.
+2021-06-26  :09:56:36: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :09:56:36: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :09:56:36: Error: No such file or directory.
+2021-06-26  :10:26:37: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :10:26:37: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :10:26:37: Error: No such file or directory.
+2021-06-26  :10:56:38: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :10:56:38: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :10:56:38: Error: No such file or directory.
+2021-06-26  :11:26:39: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :11:26:39: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :11:26:39: Error: No such file or directory.
+2021-06-26  :11:56:40: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :11:56:40: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :11:56:40: Error: No such file or directory.
+2021-06-26  :12:26:41: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :12:26:41: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :12:26:41: Error: No such file or directory.
+2021-06-26  :12:56:42: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :12:56:42: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :12:56:42: Error: No such file or directory.
+2021-06-26  :13:26:43: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :13:26:43: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :13:26:43: Error: No such file or directory.
+2021-06-26  :13:56:44: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :13:56:44: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :13:56:44: Error: No such file or directory.
+2021-06-26  :14:26:45: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :14:26:45: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :14:26:45: Error: No such file or directory.
+2021-06-26  :14:56:46: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :14:56:46: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :14:56:46: Error: No such file or directory.
+2021-06-26  :15:26:47: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :15:26:47: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :15:26:47: Error: No such file or directory.
+2021-06-26  :15:56:48: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :15:56:48: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :15:56:48: Error: No such file or directory.
+2021-06-26  :16:26:49: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :16:26:49: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :16:26:49: Error: No such file or directory.
+2021-06-26  :16:56:50: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :16:56:50: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :16:56:50: Error: No such file or directory.
+2021-06-26  :17:26:51: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :17:26:51: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :17:26:51: Error: No such file or directory.
+2021-06-26  :17:56:52: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :17:56:52: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :17:56:52: Error: No such file or directory.
+2021-06-26  :18:26:53: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :18:26:53: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :18:26:53: Error: No such file or directory.
+2021-06-26  :18:56:54: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :18:56:54: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :18:56:54: Error: No such file or directory.
+2021-06-26  :19:26:55: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :19:26:55: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :19:26:55: Error: No such file or directory.
+2021-06-26  :19:56:56: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :19:56:56: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :19:56:56: Error: No such file or directory.
+2021-06-26  :20:26:57: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :20:26:57: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :20:26:57: Error: No such file or directory.
+2021-06-26  :20:56:58: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :20:56:58: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :20:56:58: Error: No such file or directory.
+2021-06-26  :21:26:59: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :21:26:59: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :21:26:59: Error: No such file or directory.
+2021-06-26  :21:57:00: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :21:57:00: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :21:57:00: Error: No such file or directory.
+2021-06-26  :22:27:01: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :22:27:01: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :22:27:01: Error: No such file or directory.
+2021-06-26  :22:57:02: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :22:57:02: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :22:57:02: Error: No such file or directory.
+2021-06-26  :23:27:03: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :23:27:03: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :23:27:03: Error: No such file or directory.
+2021-06-26  :23:57:04: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-26  :23:57:04: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-26  :23:57:04: Error: No such file or directory.
+2021-06-27  :00:27:05: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :00:27:05: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :00:27:05: Error: No such file or directory.
+2021-06-27  :00:57:06: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :00:57:06: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :00:57:06: Error: No such file or directory.
+2021-06-27  :01:27:07: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :01:27:07: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :01:27:07: Error: No such file or directory.
+2021-06-27  :01:57:08: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :01:57:08: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :01:57:08: Error: No such file or directory.
+2021-06-27  :02:27:09: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :02:27:09: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :02:27:09: Error: No such file or directory.
+2021-06-27  :02:57:10: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :02:57:10: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :02:57:10: Error: No such file or directory.
+2021-06-27  :03:27:11: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :03:27:11: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :03:27:11: Error: No such file or directory.
+2021-06-27  :03:57:12: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :03:57:12: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :03:57:12: Error: No such file or directory.
+2021-06-27  :04:27:13: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :04:27:13: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :04:27:13: Error: No such file or directory.
+2021-06-27  :04:57:14: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :04:57:14: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :04:57:14: Error: No such file or directory.
+2021-06-27  :05:27:15: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :05:27:15: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :05:27:15: Error: No such file or directory.
+2021-06-27  :05:57:16: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :05:57:16: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :05:57:16: Error: No such file or directory.
+2021-06-27  :06:27:17: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :06:27:17: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :06:27:17: Error: No such file or directory.
+2021-06-27  :06:57:18: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :06:57:18: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :06:57:18: Error: No such file or directory.
+2021-06-27  :06:59:59: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Shades/bool_Closed/set', ... (5 bytes)): Maintains Policy
+2021-06-27  :06:59:59: Time to Evaluate Policy: 0.001
+2021-06-27  :06:59:59: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Shades/bool_Closed/set', ... (5 bytes))
+2021-06-27  :06:59:59: Forwarding PUBLISH with QoS 1 
+2021-06-27  :07:27:19: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :07:27:19: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :07:27:19: Error: No such file or directory.
+2021-06-27  :07:57:20: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :07:57:20: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :07:57:20: Error: No such file or directory.
+2021-06-27  :07:59:59: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Shades/bool_Closed/set', ... (5 bytes)): Maintains Policy
+2021-06-27  :07:59:59: Time to Evaluate Policy: 0.001
+2021-06-27  :07:59:59: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Shades/bool_Closed/set', ... (5 bytes))
+2021-06-27  :07:59:59: Forwarding PUBLISH with QoS 1 
+2021-06-27  :08:27:21: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :08:27:21: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :08:27:21: Error: No such file or directory.
+2021-06-27  :08:57:22: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :08:57:22: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :08:57:22: Error: No such file or directory.
+2021-06-27  :08:59:59: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Shades/bool_Closed/set', ... (5 bytes)): Maintains Policy
+2021-06-27  :08:59:59: Time to Evaluate Policy: 0.001
+2021-06-27  :08:59:59: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Shades/bool_Closed/set', ... (5 bytes))
+2021-06-27  :08:59:59: Forwarding PUBLISH with QoS 1 
+2021-06-27  :09:27:23: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :09:27:23: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :09:27:23: Error: No such file or directory.
+2021-06-27  :09:57:24: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :09:57:24: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :09:57:24: Error: No such file or directory.
+2021-06-27  :10:05:50: mosquitto version 2.0.7 terminating
+2021-06-27  :10:05:50: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-27  :10:05:50: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-27  :10:05:50: Error: No such file or directory.

@@ -1,0 +1,5 @@
+=>(|(AwayFromHome,OnVacation),&(GarageIsClosed,DoorLocked));(GarageDoorOpener/bool_Closed/set,true):(DoorLock/bool_Locked/set,true)
+=>(&(|(AwayFromHome,OnVacation),MotionSensed),SecurityCameraIsOn);(SecurityCamera/bool_On/set,true)
+=>(|(AwayFromHome,OnVacation),!(|(SmartTVIsOn,SmartTVIsTurningOn)));(SmartTV/bool_On/set,false)
+=>(GasSensorTriggered,!(ValveClosed));(Valve/bool_Closed/set,false)
+|(RefrigeratorIsOn,RefrigeratorIsTurningOn);(Refrigerator/bool_On/set,true)

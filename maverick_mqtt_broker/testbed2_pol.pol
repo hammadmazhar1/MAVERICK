@@ -1,0 +1,5 @@
+=>(SmokeIsDetected,!(ValveClosing))
+=>(|(AwayFromHome,OnVacation),&(!(GarageIsOpening),DoorLocking))
+=>(&(|(AwayFromHome,OnVacation),MotionSensed),|(SecurityCameraTurningOn,SecurityCameraIsOn))
+=>(|(AwayFromHome,OnVacation),!(SmartTVIsTurningOn))
+=>(|(AwayFromHome,OnVacation),|(RefrigeratorIsTurningOn,RefrigeratorIsOn))

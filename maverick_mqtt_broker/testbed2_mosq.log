@@ -1,0 +1,344 @@
+2021-06-25  :12:51:04: mosquitto version 2.0.7 starting
+2021-06-25  :12:51:04: Config loaded from ../testbed2_mosq.conf.
+2021-06-25  :12:51:04: Policies added:../testbed2_pol.pol
+2021-06-25  :12:51:04: Propositons added:../testbed2.prop
+2021-06-25  :12:51:04: Policy, invariant engine and state tracking created
+2021-06-25  :12:51:04: Opening ipv4 listen socket on port 1883.
+2021-06-25  :12:51:04: Opening ipv6 listen socket on port 1883.
+2021-06-25  :12:51:04: mosquitto version 2.0.7 running
+2021-06-25  :12:51:06: New connection from 192.168.0.51:58870 on port 1883.
+2021-06-25  :12:51:06: New connection from 192.168.0.106:38448 on port 1883.
+2021-06-25  :12:51:06: New client connected from 192.168.0.51:58870 as PARAPET_PROXY (p2, c1, k60, u'parapet').
+2021-06-25  :12:51:06: New client connected from 192.168.0.106:38448 as Upstream_automation (p2, c1, k60, u'parapet').
+2021-06-25  :12:51:17: Client PARAPET_PROXY disconnected.
+2021-06-25  :12:51:37: Client Upstream_automation disconnected.
+2021-06-25  :12:52:02: New connection from 192.168.0.51:58876 on port 1883.
+2021-06-25  :12:52:03: New client connected from 192.168.0.51:58876 as PARAPET_PROXY (p2, c1, k60, u'parapet').
+2021-06-25  :12:52:47: New connection from 192.168.0.106:38452 on port 1883.
+2021-06-25  :12:52:48: New client connected from 192.168.0.106:38452 as Upstream_automation (p2, c1, k60, u'parapet').
+2021-06-25  :12:53:59: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'OpenCloseSensorState/bool_Closed', ... (4 bytes)) violates invariant. Sending corrective actions
+2021-06-25  :12:53:59: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:53:59: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'OpenCloseSensorState/bool_Closed', ... (4 bytes))
+2021-06-25  :12:53:59: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:53:59: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'OpenCloseSensorState/bool_Closed', ... (2 bytes)) passes invariant.
+2021-06-25  :12:53:59: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:53:59: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'OpenCloseSensorState/bool_Closed', ... (2 bytes))
+2021-06-25  :12:53:59: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:54:05: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'GarageDoorOpener/bool_Closed/set', ... (5 bytes)): Maintains Policy
+2021-06-25  :12:54:05: Time to Evaluate Policy: 0.001
+2021-06-25  :12:54:05: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'GarageDoorOpener/bool_Closed/set', ... (5 bytes))
+2021-06-25  :12:54:05: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:54:05: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'GarageDoorOpener/bool_Closed', ... (3 bytes)) passes invariant.
+2021-06-25  :12:54:05: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:54:05: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'GarageDoorOpener/bool_Closed', ... (3 bytes))
+2021-06-25  :12:54:05: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:54:07: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'DoorLock/bool_Locked/set', ... (5 bytes)): Maintains Policy
+2021-06-25  :12:54:07: Time to Evaluate Policy: 0.000
+2021-06-25  :12:54:07: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'DoorLock/bool_Locked/set', ... (5 bytes))
+2021-06-25  :12:54:07: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:54:07: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'DoorLock/bool_Locked/set', ... (5 bytes)): Maintains Policy
+2021-06-25  :12:54:07: Time to Evaluate Policy: 0.000
+2021-06-25  :12:54:07: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'DoorLock/bool_Locked/set', ... (5 bytes))
+2021-06-25  :12:54:07: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:54:12: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LightingRemote/bool_On/set', ... (5 bytes)): Maintains Policy
+2021-06-25  :12:54:12: Time to Evaluate Policy: 0.001
+2021-06-25  :12:54:12: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LightingRemote/bool_On/set', ... (5 bytes))
+2021-06-25  :12:54:12: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:54:18: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'DoorLock/bool_Locked/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :12:54:18: Time to Evaluate Policy: 0.005
+2021-06-25  :12:54:18: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'DoorLock/bool_Locked/set', ... (4 bytes))
+2021-06-25  :12:54:18: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:54:18: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'DoorLock/bool_Locked', ... (2 bytes)) passes invariant.
+2021-06-25  :12:54:18: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:54:18: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'DoorLock/bool_Locked', ... (2 bytes))
+2021-06-25  :12:54:18: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:54:24: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'RobotVacuum/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :12:54:24: Time to Evaluate Policy: 0.001
+2021-06-25  :12:54:24: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'RobotVacuum/bool_On/set', ... (4 bytes))
+2021-06-25  :12:54:24: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:54:30: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'DoorLock/bool_Locked/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :12:54:30: Time to Evaluate Policy: 0.001
+2021-06-25  :12:54:30: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'DoorLock/bool_Locked/set', ... (4 bytes))
+2021-06-25  :12:54:30: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:54:36: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'SecurityCamera/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :12:54:36: Time to Evaluate Policy: 0.001
+2021-06-25  :12:54:36: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'SecurityCamera/bool_On/set', ... (4 bytes))
+2021-06-25  :12:54:36: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:54:42: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Doorbell/bool_Rung/set', ... (5 bytes)): Maintains Policy
+2021-06-25  :12:54:42: Time to Evaluate Policy: 0.001
+2021-06-25  :12:54:42: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Doorbell/bool_Rung/set', ... (5 bytes))
+2021-06-25  :12:54:42: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:54:42: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Doorbell/bool_Rung', ... (3 bytes)) passes invariant.
+2021-06-25  :12:54:42: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:54:42: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Doorbell/bool_Rung', ... (3 bytes))
+2021-06-25  :12:54:42: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:54:48: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'AirConditioner/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :12:54:48: Time to Evaluate Policy: 0.001
+2021-06-25  :12:54:48: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'AirConditioner/bool_On/set', ... (4 bytes))
+2021-06-25  :12:54:48: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:54:54: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Thermostat/int_Temp/set', ... (2 bytes)): Maintains Policy
+2021-06-25  :12:54:54: Time to Evaluate Policy: 0.001
+2021-06-25  :12:54:54: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Thermostat/int_Temp/set', ... (2 bytes))
+2021-06-25  :12:54:54: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:54:55: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Thermostat/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :12:54:55: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:54:55: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Thermostat/int_Temp', ... (2 bytes))
+2021-06-25  :12:54:55: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:55:01: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'OpenCloseSensorState/bool_Closed', ... (5 bytes)) passes invariant.
+2021-06-25  :12:55:01: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:55:01: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'OpenCloseSensorState/bool_Closed', ... (5 bytes))
+2021-06-25  :12:55:01: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:55:01: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m2, 'OpenCloseSensorState/bool_Closed', ... (3 bytes)) passes invariant.
+2021-06-25  :12:55:01: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:55:01: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m2, 'OpenCloseSensorState/bool_Closed', ... (3 bytes))
+2021-06-25  :12:55:01: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:55:13: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'GarageDoorOpener/bool_Closed', ... (4 bytes)) passes invariant.
+2021-06-25  :12:55:13: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:55:13: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'GarageDoorOpener/bool_Closed', ... (4 bytes))
+2021-06-25  :12:55:13: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:55:13: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'GarageDoorOpener/bool_Closed', ... (2 bytes)) passes invariant.
+2021-06-25  :12:55:13: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:55:13: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'GarageDoorOpener/bool_Closed', ... (2 bytes))
+2021-06-25  :12:55:13: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:55:19: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'RobotVacuum/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:55:19: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:55:19: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'RobotVacuum/bool_On', ... (4 bytes))
+2021-06-25  :12:55:19: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:55:25: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'SmartHome/str_mode', ... (8 bytes)) passes invariant.
+2021-06-25  :12:55:25: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:55:25: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'SmartHome/str_mode', ... (8 bytes))
+2021-06-25  :12:55:25: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:55:25: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'SmartHome/str_mode', ... (8 bytes)) passes invariant.
+2021-06-25  :12:55:25: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:55:25: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'SmartHome/str_mode', ... (8 bytes))
+2021-06-25  :12:55:25: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:55:31: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'LightingRemote/str_setColor', ... (3 bytes)) passes invariant.
+2021-06-25  :12:55:31: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:55:31: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'LightingRemote/str_setColor', ... (3 bytes))
+2021-06-25  :12:55:31: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:55:31: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'LightingRemote/str_setColor', ... (3 bytes)) passes invariant.
+2021-06-25  :12:55:31: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:55:31: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'LightingRemote/str_setColor', ... (3 bytes))
+2021-06-25  :12:55:31: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:55:37: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Thermostat/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :12:55:37: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:55:37: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Thermostat/int_Temp', ... (2 bytes))
+2021-06-25  :12:55:37: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:55:37: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Thermostat/int_Temp', ... (2 bytes)) passes invariant.
+2021-06-25  :12:55:37: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:55:37: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Thermostat/int_Temp', ... (2 bytes))
+2021-06-25  :12:55:37: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:55:43: Denied PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Valve/bool_Closed/set', ... (4 bytes)): Violates Policy
+2021-06-25  :12:55:43: Time to Evaluate Policy: 0.001
+2021-06-25  :12:55:49: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'SmartHome/str_mode', ... (4 bytes)) passes invariant.
+2021-06-25  :12:55:49: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:55:49: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'SmartHome/str_mode', ... (4 bytes))
+2021-06-25  :12:55:49: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:55:49: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m2, 'SmartHome/str_mode', ... (4 bytes)) passes invariant.
+2021-06-25  :12:55:49: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:55:49: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m2, 'SmartHome/str_mode', ... (4 bytes))
+2021-06-25  :12:55:49: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:55:56: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'SecurityAlarm/bool_set', ... (5 bytes)) passes invariant.
+2021-06-25  :12:55:56: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:55:56: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'SecurityAlarm/bool_set', ... (5 bytes))
+2021-06-25  :12:55:56: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:56:02: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'CoffeeMaker/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :12:56:02: Time to Evaluate Policy: 0.001
+2021-06-25  :12:56:02: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'CoffeeMaker/bool_On/set', ... (4 bytes))
+2021-06-25  :12:56:02: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:56:02: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'CoffeeMaker/bool_On', ... (2 bytes)) passes invariant.
+2021-06-25  :12:56:02: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:56:02: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'CoffeeMaker/bool_On', ... (2 bytes))
+2021-06-25  :12:56:02: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:56:08: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'SecurityCamera/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :12:56:08: Time to Evaluate Policy: 0.001
+2021-06-25  :12:56:08: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'SecurityCamera/bool_On/set', ... (4 bytes))
+2021-06-25  :12:56:08: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:56:14: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'CoffeeMaker/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :12:56:14: Time to Evaluate Policy: 0.000
+2021-06-25  :12:56:14: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'CoffeeMaker/bool_On/set', ... (4 bytes))
+2021-06-25  :12:56:14: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:56:20: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'SmokeDetector/bool_smoke_detected', ... (5 bytes)) passes invariant.
+2021-06-25  :12:56:20: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:56:20: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'SmokeDetector/bool_smoke_detected', ... (5 bytes))
+2021-06-25  :12:56:20: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:56:26: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'PresenseSensor/bool_presence_sensed', ... (5 bytes)) passes invariant.
+2021-06-25  :12:56:26: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:56:26: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'PresenseSensor/bool_presence_sensed', ... (5 bytes))
+2021-06-25  :12:56:26: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:56:38: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'OpenCloseSensorState/bool_Closed', ... (2 bytes)) passes invariant.
+2021-06-25  :12:56:38: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:56:38: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'OpenCloseSensorState/bool_Closed', ... (2 bytes))
+2021-06-25  :12:56:38: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:56:38: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m2, 'OpenCloseSensorState/bool_Closed', ... (4 bytes)) passes invariant.
+2021-06-25  :12:56:38: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:56:38: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m2, 'OpenCloseSensorState/bool_Closed', ... (4 bytes))
+2021-06-25  :12:56:38: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:56:44: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Speaker/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:56:44: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:56:44: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Speaker/bool_On', ... (4 bytes))
+2021-06-25  :12:56:44: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:56:50: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'GasSensor/int_odorLevel', ... (1 bytes)) passes invariant.
+2021-06-25  :12:56:50: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:56:50: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'GasSensor/int_odorLevel', ... (1 bytes))
+2021-06-25  :12:56:50: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:56:50: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'GasSensor/int_odorLevel', ... (1 bytes)) passes invariant.
+2021-06-25  :12:56:50: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:56:50: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'GasSensor/int_odorLevel', ... (1 bytes))
+2021-06-25  :12:56:50: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:56:51: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'GasSensor/str_Alarm_mode/set', ... (3 bytes)): Maintains Policy
+2021-06-25  :12:56:51: Time to Evaluate Policy: 0.000
+2021-06-25  :12:56:51: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'GasSensor/str_Alarm_mode/set', ... (3 bytes))
+2021-06-25  :12:56:51: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:56:51: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'GasSensor/str_Alarm_mode/set', ... (3 bytes)): Maintains Policy
+2021-06-25  :12:56:51: Time to Evaluate Policy: 0.000
+2021-06-25  :12:56:51: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'GasSensor/str_Alarm_mode/set', ... (3 bytes))
+2021-06-25  :12:56:51: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:56:51: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'GasSensor/str_Alarm_mode', ... (3 bytes)) passes invariant.
+2021-06-25  :12:56:51: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:56:51: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'GasSensor/str_Alarm_mode', ... (3 bytes))
+2021-06-25  :12:56:51: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:56:57: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'CoffeeMaker/bool_On', ... (4 bytes)) passes invariant.
+2021-06-25  :12:56:57: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:56:57: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'CoffeeMaker/bool_On', ... (4 bytes))
+2021-06-25  :12:56:57: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:03: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'MotionSensorState/bool_motion_sensed', ... (4 bytes)) passes invariant.
+2021-06-25  :12:57:03: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:57:03: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'MotionSensorState/bool_motion_sensed', ... (4 bytes))
+2021-06-25  :12:57:03: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:03: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'MotionSensorState/bool_motion_sensed', ... (2 bytes)) passes invariant.
+2021-06-25  :12:57:03: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:57:03: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'MotionSensorState/bool_motion_sensed', ... (2 bytes))
+2021-06-25  :12:57:03: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:09: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Refrigerator/int_Setting/set', ... (2 bytes)): Maintains Policy
+2021-06-25  :12:57:09: Time to Evaluate Policy: 0.001
+2021-06-25  :12:57:09: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Refrigerator/int_Setting/set', ... (2 bytes))
+2021-06-25  :12:57:09: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:09: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Refrigerator/int_Setting', ... (2 bytes)) passes invariant.
+2021-06-25  :12:57:09: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:57:09: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Refrigerator/int_Setting', ... (2 bytes))
+2021-06-25  :12:57:09: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:15: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Shades/bool_Closed', ... (4 bytes)) passes invariant.
+2021-06-25  :12:57:15: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:57:15: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Shades/bool_Closed', ... (4 bytes))
+2021-06-25  :12:57:15: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:15: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Shades/bool_Closed', ... (2 bytes)) passes invariant.
+2021-06-25  :12:57:15: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:57:15: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Shades/bool_Closed', ... (2 bytes))
+2021-06-25  :12:57:15: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:21: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LightingRemote/str_setColor/set', ... (5 bytes)): Maintains Policy
+2021-06-25  :12:57:21: Time to Evaluate Policy: 0.001
+2021-06-25  :12:57:21: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'LightingRemote/str_setColor/set', ... (5 bytes))
+2021-06-25  :12:57:21: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:21: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'LightingRemote/str_setColor', ... (5 bytes)) passes invariant.
+2021-06-25  :12:57:21: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:57:21: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'LightingRemote/str_setColor', ... (5 bytes))
+2021-06-25  :12:57:21: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:27: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/bool_Unlock', ... (4 bytes)) passes invariant.
+2021-06-25  :12:57:27: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:57:27: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Doorbell/bool_Unlock', ... (4 bytes))
+2021-06-25  :12:57:27: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:33: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Speaker/str_whats_playing/set', ... (7 bytes)): Maintains Policy
+2021-06-25  :12:57:33: Time to Evaluate Policy: 0.001
+2021-06-25  :12:57:33: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Speaker/str_whats_playing/set', ... (7 bytes))
+2021-06-25  :12:57:33: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:33: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Speaker/str_whats_playing', ... (7 bytes)) passes invariant.
+2021-06-25  :12:57:33: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:57:33: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Speaker/str_whats_playing', ... (7 bytes))
+2021-06-25  :12:57:33: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:39: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'GasSensor/int_odorLevel', ... (2 bytes)) passes invariant.
+2021-06-25  :12:57:39: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:57:39: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'GasSensor/int_odorLevel', ... (2 bytes))
+2021-06-25  :12:57:39: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:39: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'GasSensor/int_odorLevel', ... (2 bytes)) passes invariant.
+2021-06-25  :12:57:39: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:57:39: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'GasSensor/int_odorLevel', ... (2 bytes))
+2021-06-25  :12:57:39: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:40: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'GasSensor/str_Alarm_mode/set', ... (5 bytes)): Maintains Policy
+2021-06-25  :12:57:40: Time to Evaluate Policy: 0.000
+2021-06-25  :12:57:40: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'GasSensor/str_Alarm_mode/set', ... (5 bytes))
+2021-06-25  :12:57:40: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:40: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'GasSensor/str_Alarm_mode/set', ... (5 bytes)): Maintains Policy
+2021-06-25  :12:57:40: Time to Evaluate Policy: 0.000
+2021-06-25  :12:57:40: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'GasSensor/str_Alarm_mode/set', ... (5 bytes))
+2021-06-25  :12:57:40: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:40: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'GasSensor/str_Alarm_mode', ... (5 bytes)) passes invariant.
+2021-06-25  :12:57:40: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:57:40: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'GasSensor/str_Alarm_mode', ... (5 bytes))
+2021-06-25  :12:57:40: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:52: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Valve/bool_Closed/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :12:57:52: Time to Evaluate Policy: 0.001
+2021-06-25  :12:57:52: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Valve/bool_Closed/set', ... (4 bytes))
+2021-06-25  :12:57:52: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:52: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Valve/bool_Closed', ... (2 bytes)) violates invariant. Sending corrective actions
+2021-06-25  :12:57:52: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:57:52: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Valve/bool_Closed', ... (2 bytes))
+2021-06-25  :12:57:52: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:52: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Valve/bool_Closed', ... (3 bytes)) passes invariant.
+2021-06-25  :12:57:52: Time to Evaluate Invariants: 0.000
+2021-06-25  :12:57:52: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Valve/bool_Closed', ... (3 bytes))
+2021-06-25  :12:57:52: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:58: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'SecurityAlarm/str_Alarm_mode/set', ... (3 bytes)): Maintains Policy
+2021-06-25  :12:57:58: Time to Evaluate Policy: 0.001
+2021-06-25  :12:57:58: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'SecurityAlarm/str_Alarm_mode/set', ... (3 bytes))
+2021-06-25  :12:57:58: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:57:58: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'SecurityAlarm/str_Alarm_mode', ... (3 bytes)) passes invariant.
+2021-06-25  :12:57:58: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:57:58: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'SecurityAlarm/str_Alarm_mode', ... (3 bytes))
+2021-06-25  :12:57:58: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:58:04: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Doorbell/bool_Unlock/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :12:58:04: Time to Evaluate Policy: 0.001
+2021-06-25  :12:58:04: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Doorbell/bool_Unlock/set', ... (4 bytes))
+2021-06-25  :12:58:04: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:58:22: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Refrigerator/int_Setting/set', ... (2 bytes)): Maintains Policy
+2021-06-25  :12:58:22: Time to Evaluate Policy: 0.001
+2021-06-25  :12:58:22: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Refrigerator/int_Setting/set', ... (2 bytes))
+2021-06-25  :12:58:22: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:58:22: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Refrigerator/int_Setting', ... (2 bytes)) passes invariant.
+2021-06-25  :12:58:22: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:58:22: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Refrigerator/int_Setting', ... (2 bytes))
+2021-06-25  :12:58:22: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:58:28: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'Refrigerator/int_Setting', ... (3 bytes)) passes invariant.
+2021-06-25  :12:58:28: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:58:28: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'Refrigerator/int_Setting', ... (3 bytes))
+2021-06-25  :12:58:28: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:58:28: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Refrigerator/int_Setting', ... (3 bytes)) passes invariant.
+2021-06-25  :12:58:28: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:58:28: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Refrigerator/int_Setting', ... (3 bytes))
+2021-06-25  :12:58:28: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:58:34: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Shades/bool_Closed/set', ... (5 bytes)): Maintains Policy
+2021-06-25  :12:58:34: Time to Evaluate Policy: 0.001
+2021-06-25  :12:58:34: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'Shades/bool_Closed/set', ... (5 bytes))
+2021-06-25  :12:58:34: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:58:34: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'Shades/bool_Closed', ... (3 bytes)) passes invariant.
+2021-06-25  :12:58:34: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:58:34: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'Shades/bool_Closed', ... (3 bytes))
+2021-06-25  :12:58:34: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:58:40: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'RobotVacuum/bool_On', ... (5 bytes)) passes invariant.
+2021-06-25  :12:58:40: Time to Evaluate Invariants: 0.009
+2021-06-25  :12:58:40: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'RobotVacuum/bool_On', ... (5 bytes))
+2021-06-25  :12:58:40: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:58:40: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m2, 'RobotVacuum/bool_On', ... (3 bytes)) passes invariant.
+2021-06-25  :12:58:40: Time to Evaluate Invariants: 0.009
+2021-06-25  :12:58:40: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m2, 'RobotVacuum/bool_On', ... (3 bytes))
+2021-06-25  :12:58:40: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:58:47: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'CoffeeMaker/bool_On/set', ... (4 bytes)): Maintains Policy
+2021-06-25  :12:58:47: Time to Evaluate Policy: 0.001
+2021-06-25  :12:58:47: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'CoffeeMaker/bool_On/set', ... (4 bytes))
+2021-06-25  :12:58:47: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:58:53: PUBLISH status from PARAPET_PROXY (d0, q1, r0, m1, 'SmartTV/bool_On', ... (5 bytes)) passes invariant.
+2021-06-25  :12:58:53: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:58:53: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r0, m1, 'SmartTV/bool_On', ... (5 bytes))
+2021-06-25  :12:58:53: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:58:59: Accepted PUBLISH from Upstream_automation (d0, q1, r0, m1, 'GasSensor/str_Alarm_mode/set', ... (3 bytes)): Maintains Policy
+2021-06-25  :12:58:59: Time to Evaluate Policy: 0.001
+2021-06-25  :12:58:59: Forwarding PUBLISH from Upstream_automation (d0, q1, r0, m1, 'GasSensor/str_Alarm_mode/set', ... (3 bytes))
+2021-06-25  :12:58:59: Forwarding PUBLISH with QoS 1 
+2021-06-25  :12:58:59: PUBLISH status from PARAPET_PROXY (d0, q1, r1, m1, 'GasSensor/str_Alarm_mode', ... (3 bytes)) passes invariant.
+2021-06-25  :12:58:59: Time to Evaluate Invariants: 0.001
+2021-06-25  :12:58:59: Forwarding PUBLISH from PARAPET_PROXY (d0, q1, r1, m1, 'GasSensor/str_Alarm_mode', ... (3 bytes))
+2021-06-25  :12:58:59: Forwarding PUBLISH with QoS 1 
+2021-06-25  :13:05:30: mosquitto version 2.0.7 terminating
+2021-06-25  :13:05:30: Saving in-memory database to /home/pi/mosquitto/persist/mosquitto.db.
+2021-06-25  :13:05:30: Error saving in-memory database, unable to open /home/pi/mosquitto/persist/mosquitto.db.new for writing.
+2021-06-25  :13:05:30: Error: No such file or directory.

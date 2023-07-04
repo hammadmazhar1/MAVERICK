@@ -1,0 +1,4 @@
+BasementLeakDetected: ==(CURRENT(BasementLeakState/bool_Wet),CONSTANT_BOOL(TRUE))
+LivingRoomSmokeDetected: ==(CURRENT(LivingRoomSmokeDetector/bool_Smoke_Detected),CONSTANT_BOOL(TRUE))
+BasementValveShutOff: ==(CURRENT(BasementValve/bool_Closed),CONSTANT_BOOL(TRUE))
+BasementValveShuttingOff: ==(CURRENT(BasementValve/bool_Closed/set),CONSTANT_BOOL(TRUE))
