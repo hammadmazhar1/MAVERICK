@@ -1,0 +1,5 @@
+=>(&(|(CODetected,SmokeDetected),AtHome),!(DoorIsLocked));(DoorLock/bool_Locked/set,false)
+=>(&(SmokeDetected,|(AwayFromHome,OnVacation)),SecurityAlarmRinging);(SecurityAlarm/bool_Sound/set,true)
+=>(&(|(AwayFromHome,OnVacation),OpenSensed),SecurityCameraIsOn);(SecurityCamera/bool_On/set,true)
+=>(MotionDetected,LightBublisOn);(LightBulb/bool_On/set,true)
+=>(OnVacation,!(ACisOn));(AirConditioner/bool_On/set,true)

@@ -1,0 +1,5 @@
+=>(&(|(AwayFromHome,OnVacation),DoorIsLocked),!(DoorIsBeingUnlocked))
+=>(&(|(AwayFromHome,OnVacation),FrontCameraisOn),!(FrontCameraisTurnedOn))
+=>(&(|(AwayFromHome,OnVacation),BackCameraisOn),!(BackCameraisTurnedOn))
+=>(|(AwayFromHome,OnVacation),!(MicrowaveisTurnedOn))
+=>(&(|(AwayFromHome,OnVacation),AlarmisBeingSet),!(AlarmisBeingSet))

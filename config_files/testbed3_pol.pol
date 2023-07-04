@@ -1,0 +1,5 @@
+=>(|(AwayFromHome,OnVacation),!(DoorisLocking))
+=>(CODetected,!(HeaterIsTurnedOn))
+=>(SmokeDetected,!(HeaterIsTurnedOn))
+=>(MotionDetected,LightBulbisTurnedOn)
+=>(OpenSensed,|(SecurityCameraIsOn,SecurityCameraTurningOn))

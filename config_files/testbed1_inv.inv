@@ -1,0 +1,5 @@
+=>(|(AwayFromHome,OnVacation),DoorIsLocked);(DoorLock/bool_Locked/set,true)
+=>(|(AwayFromHome,OnVacation),AlarmIsSet);(SecurityAlarm/bool_set/set,true)    
+=>(|(AwayFromHome,OnVacation),&(FrontCameraisOn,BackCameraisOn));(FrontPorchSecCamera/bool_On/set,true):(BackPorchSecCamera/bool_On/set,true)    
+=>(BedroomTempisAbove90,&(BedroomACIsOn,BedroomHumidiferIsOn));(BedroomAC/bool_On/set,true):(BedroomHumid/bool_On/set,true)
+=>(LivingRoomTempisAbove90,&(LivingRoomACIsOn,LivingRoomHumidiferIsOn));(LivingRoomAC/bool_On/set,true):(LivingRoomHumid/bool_On/set,true)
