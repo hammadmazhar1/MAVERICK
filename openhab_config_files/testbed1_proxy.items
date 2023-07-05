@@ -1,0 +1,78 @@
+Switch Living_Room_AC "Living Room AC" {
+    channel="mqtt:topic:broker:LivingRoomAC:bool_On" [profile="system:follow"]
+    }
+Switch Bedroom_AC "Bedroom AC" {
+    channel="mqtt:topic:broker:BedroomAC:bool_On" [profile="system:follow"]
+}
+Switch Living_Room_Humidifer "Living Room Humidifer" {
+    channel="mqtt:topic:broker:LivingRoomHumid:bool_On" [profile="system:follow"]
+    }
+Switch Bedroom_Humidifer "Bedroom Humidifer" {
+    channel="mqtt:topic:broker:BedroomHumid:bool_On" [profile="system:follow"]
+}
+Switch Living_Room_Fan "Living Room Fan" {
+    channel="mqtt:topic:broker:LivingRoomFan:bool_On" [profile="system:follow"]
+    }
+Switch Bedroom_Fan "Bedroom Fan" {
+    channel="mqtt:topic:broker:BedroomFan:bool_On" [profile="system:follow"]
+}
+Switch Living_Room_Light "Living Room Light" {
+    channel="mqtt:topic:broker:LivingRoomLight:bool_On" [profile="system:follow"]
+    }
+Switch Bedroom_Light "Bedroom Light" {
+    channel="mqtt:topic:broker:BedroomLight:bool_On" [profile="system:follow"]
+}
+Switch Living_Room_Shades "Living Room Shades" {
+    channel="mqtt:topic:broker:LivingRoomShades:bool_On" [profile="system:follow"]
+    }
+Switch Bedroom_Shades "Bedroom Shades" {
+    channel="mqtt:topic:broker:BedroomShades:bool_On" [profile="system:follow"]
+}
+Number Thermostat "Thermostat"{
+    channel="mqtt:topic:broker:Thermostat:int_Temp" [profile="system:follow"]
+}
+Switch MicrowaveOven "Microwave Oven"{
+    channel="mqtt:topic:broker:MicrowaveOven:bool_On"[profile="system:follow"]
+}
+Number MicrowaveOvenTemp "Microwave Oven Temp"{
+    channel="mqtt:topic:broker:MicrowaveOven:int_Temp" [profile="system:follow"]
+}
+Switch SecurityAlarmSet "Security Alarm"{
+    channel="mqtt:topic:broker:SecurityAlarm:bool_set" [profile="system:follow"]
+}
+Switch SecurityAlarmStatus "Security Alarm Status"{
+    channel="mqtt:topic:broker:SecurityAlarm:bool_alarm" [profile="system:follow"]
+}
+Switch BackPorchSecCamera "Back Porch Security Camera"{
+    channel="mqtt:topic:broker:BackPorchSecCamera:bool_On" [profile="system:follow"]
+}
+Switch FrontPorchSecCamera "Front Porch Security Camera"{
+    channel="mqtt:topic:broker:FrontPorchSecCamera:bool_On" [profile="system:follow"]
+}
+Switch SmartTV "Smart TV"{
+    channel="mqtt:topic:broker:SmartTV:bool_On" [profile="system:follow"]
+}
+String SmartTVPlaying "Smart TV Whats Playing"{
+    channel="mqtt:topic:broker:SmartTV:str_whats_playing" [profile="system:follow"]
+}
+Number LivingRoomTempSensor "Living Room Temperature"{
+    channel="mqtt:topic:broker:TempSensor:int_Living_Room_Temp" [profile="system:follow"]
+}
+Number BedroomTempSensor "Bedroom Temperature"{
+    channel="mqtt:topic:broker:TempSensor:int_Bedroom_Temp" [profile="system:follow"]
+}
+Switch DoorbellRing "Doorbell Ringing"{
+    channel="mqtt:topic:broker:Doorbell:bool_Rung" [profile="system:follow"]
+}
+Switch DoorbellUnlock "Doorbell Unlock"{
+    channel="mqtt:topic:broker:Doorbell:bool_Unlock" [profile="system:follow"]
+}
+String DoorbellAlarmMode "Doorbell Alarm Mode"{
+    channel="mqtt:topic:broker:Doorbell:str_mode" [profile="system:follow"]
+}
+String SmartHome "Smart Home Mode"{
+    channel="mqtt:topic:broker:SmartHome:str_mode" [profile="system:follow"]
+}
+Switch DoorLock "DoorLock Lock status "{
+    channel="mqtt:topic:broker:DoorLock:bool_Locked" [profile="system:follow"]
+}

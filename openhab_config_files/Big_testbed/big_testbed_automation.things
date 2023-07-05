@@ -1,0 +1,311 @@
+Bridge mqtt:broker:broker "Broker" [ host="128.255.73.129",secure=true, publickeypin=false, keepAlive=60, clientID="Upstream_automation", certificatepin=false, password="parapet",qos=0,reconnectTime=30000,port=8883,lwtRetain=true,username="parapet",enableDiscovery=true] 
+{
+    Thing topic GarageDoorLock "Garage Door Lock" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="GarageDoorLock/bool_On",commandTopic="GarageDoorLock/bool_On/set",on="true",off="false"]
+    }
+    Thing topic GarageLight "Garage Light" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="GarageLight/bool_On",commandTopic="GarageLight/bool_On/set",on="true",off="false"]
+    }
+    Thing topic FrontDoorLight "Front Door Light" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="FrontDoorLight/bool_On",commandTopic="FrontDoorLight/bool_On/set",on="true",off="false"]
+    }
+    Thing topic FrontDoorLock "Front Door Lock" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="FrontDoorLock/bool_On",commandTopic="FrontDoorLock/bool_On/set",on="true",off="false"]
+    }
+    Thing topic BasementLight "Basement Light" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="BasementLight/bool_On",commandTopic="BasementLight/bool_On/set",on="true",off="false"]
+    }
+    Thing topic BasementPresenseSensor "Basement PresenseSensor" {
+        Channels:
+            Type switch : bool_Presense_Sensed "Presense Sensed" [ stateTopic="BasementPresenseSensor/bool_On",on="true",off="false"]
+    }
+    Thing topic Heater "Heater" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="Heater/bool_On",commandTopic="Heater/bool_On/set",on="true",off="false"]
+    }
+    Thing topic WasherDryer "Washer Dryer" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="WasherDryer/bool_On",commandTopic="WasherDryer/bool_On/set",on="true",off="false"]
+            Type string : str_Load "Load Status" [ stateTopic="WasherDryer/str_Load",formatBeforePublish="%s"]
+            Type string : str_Status "Wash Dry Status" [ stateTopic="WasherDryer/str_Status",formatBeforePublish="%s"]
+    }
+    Thing topic BasementValve "Basement Valve" {
+        Channels:
+            Type switch : bool_Closed "Closed Status" [ stateTopic="BasementValve/bool_Closed",commandTopic="BasementValve/bool_Closed/set",on="true",off="false"]
+    }
+    Thing topic BasementLeakState "Basement Leak Sensor" {
+        Channels:
+            Type switch : bool_Wet "Leak Status" [ stateTopic="BasementLeakState/bool_Wet",on="true",off="false"]
+    }
+    Thing topic WaterHeater "Water Heater" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="WaterHeater/bool_On",commandTopic="WaterHeater/bool_On/set",on="true",off="false"]
+    }
+    Thing topic FrontDoorbell "Front Doorbell" {
+        Channels:
+            Type switch : bool_Rung "Ring Status" [ stateTopic="FrontDoorbell/bool_Rung",on="true",off="false"]
+            Type switch : bool_Unlock "Unlock Status" [ stateTopic="FrontDoorbell/bool_Unlock",commandTopic="WaterHeater/bool_Unlock/set",on="true",off="false"]
+    }
+    Thing topic FrontCamera "Front Camera" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="FrontCamera/bool_On",commandTopic="FrontCamera/bool_On/set",on="true",off="false"]
+    }
+    Thing topic LivingRoomFan "Living Room Fan" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="LivingRoomFan/bool_On",commandTopic="LivingRoomFan/bool_On/set",on="true",off="false"]
+    }
+    Thing topic LivingRoomShades "Living Room Shades" {
+        Channels:
+            Type switch : bool_Closed "Closed Status" [ stateTopic="LivingRoomShades/bool_Closed",commandTopic="LivingRoomShades/bool_Closed/set",on="true",off="false"]
+    }
+    Thing topic PatioDoorSensor "Patio Door Sensor" {
+        Channels:
+            Type string : str_State "Door Status" [ stateTopic="PatioDoorSensor/str_State",formatBeforePublish="%d"]
+    }
+    Thing topic LivingRoomPresenseSensor "Living Room Presense Sensor" {
+        Channels:
+            Type switch : bool_Presense "Presence Detected" [ stateTopic="LivingRoomPresenseSensor/bool_Presense"]
+    }
+    Thing topic LivingRoomAC "Living Room Air Conditioner" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="LivingRoomAC/bool_On",commandTopic="LivingRoomAC/bool_On/set",on="true",off="false"]
+    }
+    Thing topic SmartTV "Smart TV" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="SmartTV/bool_On",commandTopic="SmartTV/bool_On/set",on="true",off="false"]
+            Type string : str_Whats_Playing "Whats Playing" [ stateTopic="SmartTV/str_Whats_Playing",formatBeforePublish="%s"]
+    }
+    Thing topic LivingRoomLight "Living Room Light" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="LivingRoomLight/bool_On",commandTopic="LivingRoomLight/bool_On/set",on="true",off="false"]
+            Type string : str_Color "Light Color" [ stateTopic="LivingRoomLight/str_Color",commandTopic="LivingRoomLight/str_Color/set",formatBeforePublish="%s"]
+            Type number : int_Intensity "Light Intensity" [ stateTopic="LivingRoomLight/int_Intensity",commandTopic="LivingRoomLight/int_Intensity/set",on="true",off="false",formatBeforePublish="%d"]
+    }
+    Thing topic LivingRoomTempSensor "Living Room Temp. Sensor" {
+        Channels:
+            Type number : int_Temp "Temperature" [ stateTopic="LivingRoomTempSensor/int_Temp",min=0,max=100,formatBeforePublish="%d"]
+    }
+    Thing topic LivingRoomCOSensor "Living Room CO Sensor" {
+        Channels:
+            Type switch : bool_CO_Detected "CO Limit" [ stateTopic="LivingRoomCOSensor/bool_CO_Detected",on="true",off="false"]
+    }
+    Thing topic LivingRoomSmokeDetector "Living Room Smoke Detector" {
+        Channels:
+            Type switch : bool_Smoke_Detected "Smoke Detection" [ stateTopic="LivingRoomSmokeDetector/bool_Smoke_Detected",on="true",off="false"]
+    }
+    Thing topic LivingRoomWindow "Living Room Window" {
+        Channels:
+            Type switch : bool_Open "ON Status" [ stateTopic="LivingRoomWindow/bool_Open",commandTopic="LivingRoomWindow/bool_Open/set",on="true",off="false"]
+    }
+    Thing topic LivingRoomAlarm "Living Room Alarm" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="LivingRoomAlarm/bool_On",commandTopic="LivingRoomAlarm/bool_On/set",on="true",off="false"]
+    }
+    Thing topic LivingRoomCamera "Living Room Camera" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="LivingRoomCamera/bool_On",commandTopic="LivingRoomCamera/bool_On/set",on="true",off="false"]
+    }
+    Thing topic OutsideLightSensor "Outside Light Sensor" {
+        Channels:
+            Type number : int_Illuminance "Outside Light" [ stateTopic="OutsideLightSensor/int_Illuminance",min=0,max=10,formatBeforePublish="%d"]
+    }
+    Thing topic Refrigerator "Refrigerator" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="Refrigerator/bool_On",commandTopic="Refrigerator/bool_On/set",on="true",off="false"]
+            Type number : int_Level "Cold Level" [ stateTopic="Refrigerator/int_Level",commandTopic="Refrigerator/int_Level/set",min=1, max=5,formatBeforePublish="%d"]
+    }
+    Thing topic Oven "Oven" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="Oven/bool_On",commandTopic="Oven/bool_On/set",on="true",off="false"]
+            Type number : int_Temperature "Oven Temperature" [ stateTopic="Oven/int_Temperature",commandTopic="Oven/int_Temperature/set",min=100,max=400,formatBeforePublish="%d"]
+    }
+    Thing topic CoffeeMaker "Coffee Maker" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="CoffeeMaker/bool_On",commandTopic="CoffeeMaker/bool_On/set",on="true",off="false"]
+            Type number : int_Level "Coffee Level" [ stateTopic="CoffeeMaker/int_Level",min=0,max=100,formatBeforePublish="%d"]
+    }
+    Thing topic KitchenLight "Kitchen Light" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="KitchenLight/bool_On",commandTopic="KitchenLight/bool_On/set",on="true",off="false"]
+    }
+    Thing topic KitchenSmokeDetector "Kitchen Smoke Detector" {
+        Channels:
+            Type switch : bool_Smoke_Detected "ON Status" [ stateTopic="KitchenSmokeDetector/bool_Smoke_Detected",on="true",off="false"]
+    }
+    Thing topic KitchenCOSensor "Kitchen CO Sensor" {
+        Channels:
+            Type switch : bool_CO_Detected "ON Status" [ stateTopic="KitchenCOSensor/bool_CO_Detected",on="true",off="false"]
+    }
+    Thing topic KitchenVentFan "Kitchen Vent Fan" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="KitchenVentFan/bool_On",commandTopic="KitchenVentFan/bool_On/set",on="true",off="false"]
+    }
+    Thing topic KitchenWindow "Kitchen Window" {
+        Channels:
+            Type switch : bool_Open "Open Status" [ stateTopic="KitchenWindow/bool_Open",commandTopic="KitchenWindow/bool_Open/set",on="true",off="false"]
+    }
+    Thing topic KitchenLeakState "Kitchen Leak Sensor" {
+        Channels:
+            Type switch : bool_Wet "Leak Status" [ stateTopic="KitchenLeakState/bool_Wet",on="true",off="false"]
+    }
+    Thing topic KitchenValve "Kitchen Valve" {
+        Channels:
+            Type switch : bool_Closed "Closed Status" [ stateTopic="KitchenValve/bool_Closed",commandTopic="KitchenValve/bool_Closed/set",on="true",off="false"]
+    }
+    Thing topic Dishwasher "Dishwasher" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="Dishwasher/bool_On",commandTopic="Dishwasher/bool_On/set",on="true",off="false"]
+            Type string : str_Load "Load Status" [ stateTopic="Dishwasher/str_Load",formatBeforePublish="%s"]
+    }
+    Thing topic Bathroom1LeakState "Bathroom 1 Leak Sensor" {
+        Channels:
+            Type switch : bool_Wet "Leak Status" [ stateTopic="Bathroom1LeakState/bool_Wet",on="true",off="false"]
+    }   
+    Thing topic Bathroom1Valve "Bathroom 1 Valve" {
+        Channels:
+            Type switch : bool_Closed "Closed Status" [ stateTopic="Bathroom1Valve/bool_Closed",commandTopic="Bathroom1Valve/bool_Closed/set",on="true",off="false"]
+    }
+    Thing topic Bathroom1Light "Bathroom 1 Light" {
+        Channels:
+            Type switch : bool_On "On Status" [ stateTopic="Bathroom1Light/bool_On",commandTopic="KitchenValve/bool_On/set",on="true",off="false"]
+    }
+    Thing topic Bathroom1MotionDetector "Bathroom 1 Motion Detector" {
+        Channels:
+            Type switch : bool_Motion_Detected "Motion Detection" [ stateTopic="Bathroom1MotionDetector/bool_Motion_Detected",on="true",off="false"]
+    }
+    Thing topic Bathroom1VentFan "Bathroom1VentFan" {
+        Channels:
+            Type switch : bool_On "On Status" [ stateTopic="Bathroom1VentFan/bool_On",commandTopic="Bathroom1VentFan/bool_On/set",on="true",off="false"]
+    }
+    Thing topic Bathroom2LeakState "Bathroom 2 Leak Sensor" {
+        Channels:
+            Type switch : bool_Wet "Leak Status" [ stateTopic="Bathroom2LeakState/bool_Wet",on="true",off="false"]
+    }   
+    Thing topic Bathroom2Valve "Bathroom 2 Valve" {
+        Channels:
+            Type switch : bool_Closed "Closed Status" [ stateTopic="Bathroom2Valve/bool_Closed",commandTopic="Bathroom2Valve/bool_Closed/set",on="true",off="false"]
+    }
+    Thing topic Bathroom2Light "Bathroom 2 Light" {
+        Channels:
+            Type switch : bool_On "On Status" [ stateTopic="Bathroom2Light/bool_On",commandTopic="KitchenValve/bool_On/set",on="true",off="false"]
+    }
+    Thing topic Bathroom2MotionDetector "Bathroom 2 Motion Detector" {
+        Channels:
+            Type switch : bool_Motion_Detected "Motion Detection" [ stateTopic="Bathroom2MotionDetector/bool_Motion_Detected",on="true",off="false"]
+    }
+    Thing topic Bathroom2VentFan "Bathroom2VentFan" {
+        Channels:
+            Type switch : bool_On "On Status" [ stateTopic="Bathroom2VentFan/bool_On",commandTopic="Bathroom2VentFan/bool_On/set",on="true",off="false"]
+    }
+    Thing topic Bedroom1Shades "Bedroom 1 Shades" {
+        Channels:
+            Type switch : bool_Closed "Closed Status" [ stateTopic="Bedroom1Shades/bool_Closed",commandTopic="Bedroom1Shades/bool_Closed/set",on="true",off="false"]
+    }
+    Thing topic Bedroom1Window "Bedroom 1 Window" {
+        Channels:
+            Type switch : bool_Open "Open Status" [ stateTopic="Bedroom1Window/bool_Open",commandTopic="Bedroom1Window/bool_Open/set",on="true",off="false"]
+    }
+    Thing topic Bedroom1CO2Monitor "Bedroom 1 CO2 Monitor" {
+        Channels:
+            Type number : int_CO2_Level "CO2 Level" [ stateTopic="Bedroom1CO2Monitor/int_CO2_Level",formatBeforePublish="%d"]
+    }
+    Thing topic Bedroom1Light "Bedroom 1 Light" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="Bedroom1Light/bool_On",commandTopic="Bedroom1Light/bool_On/set",on="true",off="false"]
+            Type number : int_Intensity "Light Intensity" [ stateTopic="Bedroom1Light/int_Intensity",commandTopic="Bedroom1Light/int_Intensity/set",min=0,max=100,formatBeforePublish="%d"]
+            Type string : str_Color "Light Color" [ stateTopic="Bedroom1Light/str_Color",commandTopic="Bedroom1Light/str_Color/set",formatBeforePublish="%s"]
+    }
+    Thing topic Bedroom1Fan "Bedroom 1 Fan" {
+        Channels:
+            Type switch : bool_On "On Status" [ stateTopic="Bedroom1Fan/bool_On",commandTopic="Bedroom1Fan/bool_On/set",on="true",off="false"]
+    }
+    Thing topic Bedroom1SmartPlug "Bedroom 1 Smart Plug" {
+        Channels:
+            Type switch : bool_On "On Status" [ stateTopic="Bedroom1SmartPlug/bool_On",commandTopic="Bedroom1SmartPlug/bool_On/set",on="true",off="false"]
+    }
+    Thing topic Bedroom1TempSensor "Bedroom 1 Temp. Sensor" {
+        Channels:
+            Type number : int_Temp "Temperature" [ stateTopic="Bedroom1TempSensor/int_Temp",min=0,max=100,formatBeforePublish="%d"]
+    }
+    Thing topic Bedroom1AC "Bedroom 1 AC" {
+        Channels:
+            Type switch : bool_On "On Status" [ stateTopic="Bedroom1AC/bool_On",commandTopic="Bedroom1AC/bool_On/set",on="true",off="false"]
+    }
+    Thing topic Bedroom2Shades "Bedroom 2 Shades" {
+        Channels:
+            Type switch : bool_Closed "Closed Status" [ stateTopic="Bedroom2Shades/bool_Closed",commandTopic="Bedroom2Shades/bool_Closed/set",on="true",off="false"]
+    }
+    Thing topic Bedroom2Window "Bedroom 2 Window" {
+        Channels:
+            Type switch : bool_Open "Open Status" [ stateTopic="Bedroom2Window/bool_Open",commandTopic="Bedroom2Window/bool_Open/set",on="true",off="false"]
+    }
+    Thing topic Bedroom2CO2Monitor "Bedroom 2 CO2 Monitor" {
+        Channels:
+            Type number : int_CO2_Level "CO2 Level" [ stateTopic="Bedroom2CO2Monitor/int_CO2_Level",formatBeforePublish="%d"]
+    }
+    Thing topic Bedroom2Light "Bedroom 2 Light" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="Bedroom2Light/bool_On",commandTopic="Bedroom2Light/bool_On/set",on="true",off="false"]
+            Type number : int_Intensity "Light Intensity" [ stateTopic="Bedroom2Light/int_Intensity",commandTopic="Bedroom2Light/int_Intensity/set",min=0,max=100,formatBeforePublish="%d"]
+            Type string : str_Color "Light Color" [ stateTopic="Bedroom2Light/str_Color",commandTopic="Bedroom2Light/str_Color/set",formatBeforePublish="%s"]
+    }
+    Thing topic Bedroom2Fan "Bedroom 2 Fan" {
+        Channels:
+            Type switch : bool_On "On Status" [ stateTopic="Bedroom2Fan/bool_On",commandTopic="Bedroom2Fan/bool_On/set",on="true",off="false"]
+    }
+    Thing topic Bedroom2SmartPlug "Bedroom 2 Smart Plug" {
+        Channels:
+            Type switch : bool_On "On Status" [ stateTopic="Bedroom2SmartPlug/bool_On",commandTopic="Bedroom2SmartPlug/bool_On/set",on="true",off="false"]
+    }
+    Thing topic Bedroom2TempSensor "Bedroom 2 Temp. Sensor" {
+        Channels:
+            Type number : int_Temp "Temperature" [ stateTopic="Bedroom2TempSensor/int_Temp",min=0,max=100,formatBeforePublish="%d"]
+    }
+    Thing topic Bedroom2AC "Bedroom 2 AC" {
+        Channels:
+            Type switch : bool_On "On Status" [ stateTopic="Bedroom2AC/bool_On",commandTopic="Bedroom2AC/bool_On/set",on="true",off="false"]
+    }
+    Thing topic Bedroom3Shades "Bedroom 3 Shades" {
+        Channels:
+            Type switch : bool_Closed "Closed Status" [ stateTopic="Bedroom3Shades/bool_Closed",commandTopic="Bedroom3Shades/bool_Closed/set",on="true",off="false"]
+    }
+    Thing topic Bedroom3Window "Bedroom 3 Window" {
+        Channels:
+            Type switch : bool_Open "Open Status" [ stateTopic="Bedroom3Window/bool_Open",commandTopic="Bedroom3Window/bool_Open/set",on="true",off="false"]
+    }
+    Thing topic Bedroom3CO2Monitor "Bedroom 3 CO2 Monitor" {
+        Channels:
+            Type number : int_CO2_Level "CO2 Level" [ stateTopic="Bedroom3CO2Monitor/int_CO2_Level",formatBeforePublish="%d"]
+    }
+    Thing topic Bedroom3Light "Bedroom 3 Light" {
+        Channels:
+            Type switch : bool_On "ON Status" [ stateTopic="Bedroom3Light/bool_On",commandTopic="Bedroom3Light/bool_On/set",on="true",off="false"]
+            Type number : int_Intensity "Light Intensity" [ stateTopic="Bedroom3Light/int_Intensity",commandTopic="Bedroom3Light/int_Intensity/set",min=0,max=100,formatBeforePublish="%d"]
+            Type string : str_Color "Light Color" [ stateTopic="Bedroom3Light/str_Color",commandTopic="Bedroom3Light/str_Color/set",formatBeforePublish="%s"]
+    }
+    Thing topic Bedroom3Fan "Bedroom 3 Fan" {
+        Channels:
+            Type switch : bool_On "On Status" [ stateTopic="Bedroom3Fan/bool_On",commandTopic="Bedroom3Fan/bool_On/set",on="true",off="false"]
+    }
+    Thing topic Bedroom3SmartPlug "Bedroom 3 Smart Plug" {
+        Channels:
+            Type switch : bool_On "On Status" [ stateTopic="Bedroom3SmartPlug/bool_On",commandTopic="Bedroom3SmartPlug/bool_On/set",on="true",off="false"]
+    }
+    Thing topic Bedroom3TempSensor "Bedroom 3 Temp. Sensor" {
+        Channels:
+            Type number : int_Temp "Temperature" [ stateTopic="Bedroom3TempSensor/int_Temp",min=0,max=100,formatBeforePublish="%d"]
+    }
+    Thing topic Bedroom3AC "Bedroom 3 AC" {
+        Channels:
+            Type switch : bool_On "On Status" [ stateTopic="Bedroom3AC/bool_On",commandTopic="Bedroom3AC/bool_On/set",on="true",off="false"]
+    }
+    Thing topic SmartHome "Smart Home"{
+        Channels:
+            Type string : str_Status "Home Status" [ stateTopic="SmartHome/str_Status", commandTopic="SmartHome/str_Status/set",formatBeforePublish="%s"]
+    }
+}

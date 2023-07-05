@@ -1,0 +1,92 @@
+rule "Living Room Shades are closed and lights are off when watching TV after 7pm"
+when
+    Time cron "* 0 19 * * ?"
+then
+    logInfo("ruleTrigger", "Rule 1 Triggered")
+    if(SmartTV.state ==ON ) {
+        Living_Room_Shades.sendCommand(ON)
+        Living_Room_Light.sendCommand(OFF)
+    }
+end
+
+rule "Turn off lights and fans when not home"
+when
+    Item SmartHome changed to "Away"
+then
+    logInfo("ruleTrigger", "Rule 2 Triggered")
+    Living_Room_Humidifer.sendCommand(OFF)
+    Living_Room_Light.sendCommand(OFF)
+    Living_Room_Fan.sendCommand(OFF)
+    Bedroom_Humidifer.sendCommand(OFF)
+    Bedroom_Light.sendCommand(OFF)
+    Bedroom_Fan.sendCommand(OFF)
+end
+
+rule "Turn on humidifiers at midnight"
+when
+    Time cron "0 0 0 * * ?"
+then
+    logInfo("ruleTrigger", "Rule 3 Triggered")
+    Living_Room_Humidifer.sendCommand(ON)
+    Bedroom_Humidifer.sendCommand(ON)
+end
+
+rule "If playing movie at night, close blinds and turn on "
+when
+    Time cron "0 * 19 * * ?"
+then
+    logInfo("ruleTrigger", "Rule 4 Triggered")
+    if (SmartTVPlaying=="movie"){
+        Thermostat.sendCommand(70)
+        Living_Room_Light.sendCommand(OFF)
+        Living_Room_Fan.sendCommand(ON)
+        Living_Room_Humidifer.sendCommand(ON)
+        Living_Room_Shades.sendCommand(ON)
+    }
+end
+
+rule "Turn On Fan in high temperature"
+when
+    Item LivingRoomTempSensor received update
+then
+    logInfo("ruleTrigger", "Rule 5 Triggered")
+    if (LivingRoomTempSensor.state > 70){
+        Living_Room_Fan.sendCommand(ON)
+    }
+end
+
+rule "Sound alarm when doorbell tries to unlock door when lock is set"
+when
+    Item DoorbellUnlock received command ON
+then
+    logInfo("ruleTrigger", "Rule 6 Triggered")
+    if (DoorLook.status ==ON) {
+        DoorbellAlarmMode.sendCommand("siren")
+    }
+end
+
+rule "Turn on front camera when bell is rung"
+when
+    Item DoorbellRing received command ON
+then
+    logInfo("ruleTrigger", "Rule 7 Triggered")
+    FrontPorchSecCamera.sendCommand(ON)
+end
+
+rule "Open Shades at 8 AM"
+when
+    Time cron "0 0 8 * * ?"
+then
+    logInfo("ruleTrigger", "Rule 8 Triggered")
+    Living_Room_Shades.sendCommand(OFF)
+end
+
+rule "Turn On cameras and close shades after 8 PM"
+when
+    Time cron "0 0 20 * * ?"
+then
+    logInfo("ruleTrigger", "Rule 9 Triggered")
+    Living_Room_Shades.sendCommand(ON)
+    FrontPorchSecCamera.sendCommand(ON)
+    BackPorchSecCamera.sendCommand(ON)
+end

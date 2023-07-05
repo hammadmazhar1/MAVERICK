@@ -1,0 +1,72 @@
+rule "Turn on air conditioner in high temperature when at home"
+when
+    Item TemperatureSensorState received update
+then
+    if ((TemperatureSensorState.state as Number) > 80 && SmartHome.state == "home"){
+        AirConditioner.sendCommand(ON)
+    }
+end
+
+rule "Turn on security camera when at home and doorbell is ringing "
+when
+    Item DoorbellRing received command ON
+then
+    if (SmartHome.state == "home"){
+        SecurityCamera.sendCommand(ON)
+    }
+end
+
+rule "Shades are open between 7AM to 9AM"
+when
+    Time cron "0 0 7-9 * * ?"
+then
+    Shades.sendCommand(OFF)
+end
+
+rule "Sound alarm when CO level is high and not home"
+when
+    Item CODetectorState received command ON
+then
+    if (SmartHome.state == "away"){
+        SecurityAlarm.sendCommand("ON")
+    }
+end
+
+rule "Sound alarm when smoke detected and not home"
+when
+    Item SmokeDetectorState received command ON
+then
+    if (SmartHome.state == "away"){
+        SecurityAlarm.sendCommand("ON")
+    }
+end
+
+rule "Lock the door when not home"
+when
+    Item SmartHome changed to "away"
+then
+    DoorLock.sendCommand(ON)
+end
+
+rule "Turn on light bulb when motion detected"
+when
+    Item MotionSensorState received command ON
+then
+    LightBulb.sendCommand(ON)
+end
+
+rule "Turn on security camera when the Open Close Sensor is on open state"
+when
+    Item OpenCloseSensorState received command OFF
+then
+    SecurityCamera.sendCommand(ON)
+end
+
+rule "Turn on heater in low temperature when at home"
+when
+    Item TemperatureSensorState received update
+then
+    if ((TemperatureSensorState.state as Number) < 65 && SmartHome.state == "home"){
+        Heater.sendCommand(ON)
+    }
+end

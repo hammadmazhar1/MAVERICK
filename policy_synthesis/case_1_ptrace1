@@ -1,0 +1,5 @@
+<Home,locationMode,home>
+<Door_Lock,lock,locked>
+<Home,locationMode,away>
+<Home,locationMode,home>
+<Door_Lock,lock,unlocked>

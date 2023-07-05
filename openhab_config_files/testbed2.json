@@ -1,0 +1,96 @@
+{
+	"Devices":{
+		"Air Conditioner":{
+			"bool_On":false
+		},
+		"Coffee Maker":{
+			"bool_On":false
+		},
+		"Fan":{
+			"bool_On":false
+		},
+		"Light Bulb":{
+			"bool_On":false
+		},
+		"Shades":{
+			"bool_Closed":false
+		},
+		"Thermostat":{
+			"int_Temp":65
+		},
+		"Refrigerator":{
+			"bool_On":false,
+			"int_Setting":3
+		},
+		"Robot Vacuum":{
+			"bool_On":false
+		},
+		"Door Lock":{
+			"bool_Locked":false,
+		},
+		"Garage Door Opener":{
+			"bool_Closed":false,
+		},
+		"Security Alarm":{
+			"bool_set":false,
+			"str_Alarm_mode":"none"
+		},
+		"Security Camera":{
+			"bool_On":false
+		},
+		"Smart TV":{
+			"bool_On":false,
+			"str_whats_playing":"nothing"
+		},
+		"Speaker":{
+			"bool_On":false,
+			"str_whats_playing":"nothing"
+		},
+		"Water Leak Detector State":{
+			"bool_wet":false
+		},
+		"Gas Sensor":{
+			"int_odorLevel":0,
+			"str_Alarm_mode":"none"
+		},
+		"Motion Sensor State":{
+			"bool_motion_sensed":false
+		},
+		"Open Close Sensor State":{
+			"bool_Closed":true
+		},
+		"Presense Sensor":{
+			"bool_presence_sensed":false
+		},
+		"Smoke Detector":{
+			"bool_smoke_detected":false
+		},
+		"Doorbell":{
+			"bool_rung":false,
+			"bool_Unlock":false
+		},
+		"Lighting Remote":{
+			"bool_On":false,
+			"str_setColor":"white"
+		},
+		"Valve":{
+			"bool_Closed":false
+		},
+		"Smart Home":{
+			"str_mode":"Home"
+		}
+	},
+	"Rules":{
+		"1":"IF \"Time\"==\"0 0 7 * * ?\" AND \"Smart Home.str_mode\"==\"Home\" THEN \"Coffee Maker.bool_On\"=true,\"Shades.bool_Closed\"=false",
+		"2":"IF \"Smart Home.str_mode\"==\"Away\" THEN \"Fan.bool_On\"=false, \"Lighting Remote.bool_On\"=false,\"Security Camera.bool_On\"=true, \"Door Lock.bool_Locked\"=true, \"Garage Door Opener.bool_Closed\"=true",
+		"3":"IF \"Smart Home.str_mode\"==\"away\" AND \"Motion Sensor State.bool_motion_sensed\"==true THEN \"Security Alarm.str_Alarm_mode\"=\"siren\", \"Security Camera.bool_On\"=true",
+		"4":"IF \"Water Leak Detector State.bool_wet\"==true THEN \"Valve.bool_Closed\"=true",
+		"5":"IF \"Gas Sensor.int_odorLevel\"==10 THEN \"Gas Sensor.str_Alarm_mode\"=\"siren\"",
+		"6":"IF \"Garage Door Opener.bool_Closed\"==false THEN \"Door Lock.bool_Locked\"=false",
+		"7":"IF \"Smart Home.str_mode\"==\"Away\" AND \"Time\"==\"0 0 13 * * ?\" THEN \"Robot Vacuum.bool_On\"=true",
+		"9":"IF \"Smart Home.str_mode\"==\"Vacation\" AND \"Time\"==\"0 0 18 * * ?\" THEN \"Lighting Remote.bool_On\"=true",
+		"10":"IF \"Time\"==\"0 0 21 * * ?\" THEN \"Lighting Remote.str_setColor\"=\"yellow\"",
+		"11":"IF \"Smart Home.str_mode\"==\"Vacation\" AND \"Time\"==\"0 0 23 * * ?\" THEN \"Lighting Remote.bool_On\"=false",
+		"12":"IF \"Time\"==\"0 0 20 * * ?\" THEN \"Shades.bool_Closed\"=false"
+	}
+}

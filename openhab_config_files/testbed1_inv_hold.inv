@@ -1,0 +1,6 @@
+=>(|(AwayFromHome,OnVacation),!(MicrowaveOvenIsOn));(MicrowaveOven/bool_On/set,false)
+=>(|(AwayFromHome,OnVacation),DoorIsLocked);(DoorLock/bool_Locked/set,true)
+!(BedroomTempisAbove90);(BedroomAC/bool_On/set,true):(BedroomHumid/bool_On/set,true)
+!(LivingRoomTempisAbove90);(LivingRoomAC/bool_On/set,true):(LivingRoomHumid/bool_On/set,true)
+=>(&(|(AwayFromHome,OnVacation),BellIsRung),FrontCameraisOn);(FrontPorchSecCamera/bool_On/set,true)
+=>(|(AwayFromHome,OnVacation),AlarmIsSet);(SecurityAlarm/bool_set/set,true)    

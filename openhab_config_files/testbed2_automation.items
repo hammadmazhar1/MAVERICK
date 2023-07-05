@@ -1,0 +1,93 @@
+Switch AirConditioner "Air Conditioner" {
+    channel="mqtt:topic:broker:AirConditioner:bool_On"
+}
+Switch CoffeeMaker "Coffee Maker" {
+    channel="mqtt:topic:broker:CoffeeMaker:bool_On"
+}
+Switch Fan "Fan" {
+    channel="mqtt:topic:broker:Fan:bool_On"
+}
+Switch LightBulb "Light Bulb" {
+    channel="mqtt:topic:broker:LightBulb:bool_On"
+}
+Switch Shades "Shades" {
+    channel="mqtt:topic:broker:Shades:bool_Closed"
+}
+Number Thermostat "Thermostat"{
+    channel="mqtt:topic:broker:Thermostat:int_Temp"
+}
+Switch Refrigerator "Refrigerator" {
+    channel="mqtt:topic:broker:Refrigerator:bool_On"
+}
+Number RefrigeratorSetting "Refrigerator Setting" {
+    channel="mqtt:topic:broker:Refrigerator:int_Setting"
+}
+Switch RobotVacuum "Robot Vacuum" {
+    channel="mqtt:topic:broker:RobotVacuum:bool_On"
+}
+Switch DoorLock "Door Lock" {
+    channel="mqtt:topic:broker:DoorLock:bool_Locked"
+}
+Switch GarageDoorOpener "Garage Door Opener" {
+    channel="mqtt:topic:broker:GarageDoorOpener:bool_Closed"
+}
+Switch SecurityAlarm "Security Alarm" {
+    channel="mqtt:topic:broker:SecurityAlarm:bool_set"
+}
+String SecurityAlarmMode "Security Alarm Mode" {
+    channel="mqtt:topic:broker:SecurityAlarm:str_Alarm_mode"
+}
+Switch SecurityCamera "Security Camera" {
+    channel="mqtt:topic:broker:SecurityCamera:bool_On"
+}
+Switch SmartTV "Smart TV"{
+    channel="mqtt:topic:broker:SmartTV:bool_On"
+}
+String SmartTVPlaying "Smart TV Whats Playing"{
+    channel="mqtt:topic:broker:SmartTV:str_whats_playing"
+}
+Switch Speaker "Speaker" {
+    channel="mqtt:topic:broker:Speaker:bool_On"
+}
+String SpeakerPlaying "Speaker Playing" {
+    channel="mqtt:topic:broker:Speaker:str_whats_playing"
+}
+Switch WaterLeakDetectorState "Water Leak Detector State" {
+    channel="mqtt:topic:broker:WaterLeakDetectorState:bool_wet"
+}
+Number GasSensor "Gas Sensor"{
+    channel="mqtt:topic:broker:GasSensor:int_odorLevel"
+}
+String GasSensorAlarmMode "Gas Sensor Alarm Mode" {
+    channel="mqtt:topic:broker:GasSensor:str_Alarm_mode"
+}
+Switch MotionSensorState "Motion Sensor State" {
+    channel="mqtt:topic:broker:MotionSensorState:bool_motion_sensed"
+}
+Switch OpenCloseSensorState "Open Close Sensor State" {
+    channel="mqtt:topic:broker:OpenCloseSensorState:bool_Closed"
+}
+Switch PresenseSensor "Presense Sensor" {
+    channel="mqtt:topic:broker:PresenseSensor:bool_presence_sensed"
+}
+Switch SmokeDetector "Smoke Detector" {
+    channel="mqtt:topic:broker:SmokeDetector:bool_smoke_detected"
+}
+Switch DoorbellRing "Doorbell Ringing"{
+    channel="mqtt:topic:broker:Doorbell:bool_Rung"
+}
+Switch DoorbellUnlock "Doorbell Unlock"{
+    channel="mqtt:topic:broker:Doorbell:bool_Unlock"
+}
+Switch LightingRemote "Lighting Remote" {
+    channel="mqtt:topic:broker:LightingRemote:bool_On"
+}
+String LightingRemoteSetColor "Lighting Remote Set Color" {
+    channel="mqtt:topic:broker:LightingRemote:str_setColor"
+}
+Switch Valve "Valve" {
+    channel="mqtt:topic:broker:Valve:bool_Closed"
+}
+String SmartHome "Smart Home Mode"{
+    channel="mqtt:topic:broker:SmartHome:str_mode"
+}

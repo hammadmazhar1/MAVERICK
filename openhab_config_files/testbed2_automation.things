@@ -1,0 +1,179 @@
+Bridge mqtt:broker:broker "Broker" [ host="192.168.0.51",secure=true, publickeypin=false, keepAlive=60, clientID="Upstream_automation", certificatepin=false, password="parapet",qos=0,reconnectTime=30000,port=1883,lwtRetain=true,username="parapet",enableDiscovery=true] {
+    Thing topic AirConditioner "Air Conditioner" {
+        Channels:
+            Type switch : bool_On "ON Status" [ commandTopic="AirConditioner/bool_On/set",stateTopic="AirConditioner/bool_On",on="true",off="false",postCommand=true]
+    }
+    Thing topic CoffeeMaker "Coffee Maker" {
+        Channels:
+            Type switch : bool_On "ON Status" [ commandTopic="CoffeeMaker/bool_On/set",stateTopic="CoffeeMaker/bool_On",on="true",off="false",postCommand=true]
+    }
+    Thing topic Fan "Fan" {
+        Channels:
+            Type switch : bool_On "ON Status" [ commandTopic="Fan/bool_On/set",stateTopic="Fan/bool_On",on="true",off="false",postCommand=true]
+    }
+    Thing topic LightBulb "Light Bulb" {
+        Channels:
+            Type switch : bool_On "ON Status" [ commandTopic="LightBulb/bool_On/set",stateTopic="LightBulb/bool_On",on="true",off="false",postCommand=true]
+    }
+    Thing topic Shades "Shades" {
+        Channels:
+            Type switch : bool_Closed "Shades Closed" [ commandTopic="Shades/bool_Closed/set",stateTopic="Shades/bool_Closed",on="true",off="false",postCommand=true]
+    }
+    Thing topic Thermostat "Thermostat" {
+        Channels:
+            Type number : int_Temp "Temperature" [
+                commandTopic="Thermostat/int_Temp/set",
+                stateTopic="Thermostat/int_Temp",min=0,max=100,
+                formatBeforePublish="%d",postCommand=true
+            ]
+    }
+    Thing topic Refrigerator "Refrigerator" {
+        Channels:
+            Type switch : bool_On "On Status"[
+                commandTopic="Refrigerator/bool_On/set",
+                stateTopic="Refrigerator/bool_On",on="true",off="false",postCommand=true
+            ]
+            Type number : int_Setting "Setting"[
+                commandTopic="Refrigerator/int_Setting/set",
+                stateTopic="Refrigerator/int_Setting",
+                formatBeforePublish="%d",postCommand=true
+            ]
+    }
+    Thing topic RobotVacuum "Robot Vacuum" {
+        Channels:
+            Type switch : bool_On "ON Status" [ commandTopic="RobotVacuum/bool_On/set",stateTopic="RobotVacuum/bool_On",on="true",off="false",postCommand=true]
+    }
+    Thing topic DoorLock "Door Lock"{
+        Channels:
+            Type switch : bool_Locked "Door Locked"[
+                commandTopic="DoorLock/bool_Locked/set",
+                stateTopic="DoorLock/bool_Locked",
+                on="true",off="false",postCommand=true
+            ]
+    }
+    Thing topic GarageDoorOpener "Garage Door Opener" {
+        Channels:
+            Type switch : bool_Closed "ON Status" [ commandTopic="GarageDoorOpener/bool_Closed/set",stateTopic="GarageDoorOpener/bool_Closed",on="true",off="false",postCommand=true]
+    }
+    Thing topic SecurityAlarm "Security Alarm"{
+        Channels:
+            Type switch : bool_set "Set Status"[
+                commandTopic="SecurityAlarm/bool_set/set",
+                stateTopic="SecurityAlarm/bool_set",on="true",off="false",postCommand=true
+            ]
+            Type string : str_Alarm_mode "Alarm Mode"[
+                commandTopic="SecurityAlarm/str_Alarm_mode/set",
+                stateTopic="SecurityAlarm/str_Alarm_mode",
+                formatBeforePublish="%s",postCommand=true
+            ]
+    }
+    Thing topic SecurityCamera "Security Camera" {
+        Channels:
+            Type switch : bool_On "ON Status" [ commandTopic="SecurityCamera/bool_On/set",stateTopic="SecurityCamera/bool_On",on="true",off="false",postCommand=true]
+    }
+    Thing topic SmartTV "Smart TV"{
+        Channels:
+            Type switch : bool_On "On Status"[
+                commandTopic="SmartTV/bool_On/set",
+                stateTopic="SmartTV/bool_On",on="true",off="false",postCommand=true
+            ]
+            Type string: str_whats_playing "Whats Playing"[
+                commandTopic="SmartTV/str_whats_playing/set",
+                stateTopic="SmartTV/str_whats_playing",
+                formatBeforePublish="%s",postCommand=true
+            ]
+    }
+    Thing topic Speaker "Speaker"{
+        Channels:
+            Type switch : bool_On "On Status"[
+                commandTopic="Speaker/bool_On/set",
+                stateTopic="Speaker/bool_On",on="true",off="false",postCommand=true
+            ]
+            Type string: str_whats_playing "Whats Playing"[
+                commandTopic="Speaker/str_whats_playing/set",
+                stateTopic="Speaker/str_whats_playing",
+                formatBeforePublish="%s",postCommand=true
+            ]
+    }
+    Thing topic WaterLeakDetectorState "Water Leak Detector State" {
+        Channels:
+            Type switch : bool_wet "Water Leak Detected" [ 
+            stateTopic="WaterLeakDetectorState/bool_wet",on="true",off="false",postCommand=true]
+    }
+    Thing topic GasSensor "Gas Sensor" {
+        Channels:
+            Type number : int_odorLevel "Odor Level" [
+                stateTopic="GasSensor/int_odorLevel",min=0,max=100,
+                formatBeforePublish="%d",postCommand=true
+            ]
+            Type string : str_Alarm_mode "Alarm Mode"[
+                commandTopic="GasSensor/str_Alarm_mode/set",
+                stateTopic="GasSensor/str_Alarm_mode",
+                formatBeforePublish="%s",postCommand=true
+            ]
+    }
+    Thing topic MotionSensorState "Motion Sensor State" {
+        Channels:
+            Type switch : bool_motion_sensed "Motion Detected" [
+                stateTopic="MotionSensorState/bool_motion_sensed",on="true",off="false",postCommand=true
+            ]
+    }
+    Thing topic OpenCloseSensorState "Open Close Sensor State" {
+        Channels:
+            Type switch : bool_Closed "Closed Status" [
+                stateTopic="OpenCloseSensorState/bool_Closed",on="true",off="false",postCommand=true
+            ]
+    }
+    Thing topic PresenseSensor "Presense Sensor" {
+        Channels:
+            Type switch : bool_presence_sensed "Presense Detected" [
+                stateTopic="PresenseSensor/bool_presence_sensed",on="true",off="false",postCommand=true
+            ]
+    }
+    Thing topic SmokeDetector "Smoke Detector" {
+        Channels:
+            Type switch : bool_smoke_detected "Smoke Detected" [
+                stateTopic="SmokeDetector/bool_smoke_detected",on="true",off="false",postCommand=true
+            ]
+    }
+    Thing topic Doorbell "Doorbell"{
+        Channels:
+            Type switch : bool_Rung "Bell Rung"[
+                commandTopic="Doorbell/bool_Rung/set",
+                stateTopic="Doorbell/bool_Rung",
+                on="true",off="false",postCommand=true
+            ]
+            Type switch : bool_Unlock "Door Unlocked"[
+                commandTopic="Doorbell/bool_Unlock/set",
+                stateTopic="Doorbell/bool_Unlock",
+                on="true",off="false",postCommand=true
+            ]
+    }
+    Thing topic LightingRemote "Lighting Remote" {
+        Channels:
+            Type switch : bool_On "On Status"[
+                commandTopic="LightingRemote/bool_On/set",
+                stateTopic="LightingRemote/bool_On",on="true",off="false",postCommand=true
+            ]
+            Type string: str_setColor "Color"[
+                commandTopic="LightingRemote/str_setColor/set",
+                stateTopic="LightingRemote/str_setColor",
+                formatBeforePublish="%s",postCommand=true
+            ]
+    }
+    Thing topic Valve "Valve" {
+        Channels:
+            Type switch : bool_Closed "Valve Closed" [
+                commandTopic="Valve/bool_Closed/set",
+                stateTopic="Valve/bool_Closed",on="true",off="false",postCommand=true
+            ]
+    }
+    Thing topic SmartHome "Smart Home"{
+        Channels:
+            Type string : str_mode "Home Mode"[
+                commandTopic="SmartHome/str_mode/set",
+                stateTopic="SmartHome/str_mode",
+                formatBeforePublish="%s",postCommand=true
+            ]
+    }
+}

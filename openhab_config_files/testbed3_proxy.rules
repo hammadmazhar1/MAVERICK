@@ -1,0 +1,127 @@
+rule "AirConditionerUpdateMQTT"
+when
+    Item AirConditioner changed
+then
+    val mqttActions = getActions("mqtt","mqtt:broker:broker")
+    mqttActions.publishMQTT("AirConditioner/bool_On",AirConditioner.state.toString(),true)
+end
+
+rule "LightBulbUpdateMQTT"
+when
+    Item LightBulb changed
+then
+    val mqttActions = getActions("mqtt","mqtt:broker:broker")
+    mqttActions.publishMQTT("LightBulb/bool_On",LightBulb.state.toString(),true)
+end
+
+rule "ShadesUpdateMQTT"
+when
+    Item Shades changed
+then
+    val mqttActions = getActions("mqtt","mqtt:broker:broker")
+    mqttActions.publishMQTT("Shades/bool_Closed",Shades.state.toString(),true)
+end
+
+rule "HeaterUpdateMQTT"
+when
+    Item Heater changed
+then
+    val mqttActions = getActions("mqtt","mqtt:broker:broker")
+    mqttActions.publishMQTT("Heater/bool_On",Heater.state.toString(),true)
+end
+
+rule "ThermostatUpdateMQTT"
+when
+    Item Thermostat changed
+then
+    val mqttActions = getActions("mqtt","mqtt:broker:broker")
+    mqttActions.publishMQTT("Thermostat/int_Temp",Thermostat.state.toString(),true)
+end
+
+rule "DoorLockUpdateMQTT"
+when
+    Item DoorLock changed
+then
+    val mqttActions = getActions("mqtt","mqtt:broker:broker")
+    mqttActions.publishMQTT("DoorLock/bool_Locked",DoorLock.state.toString(),true)
+end
+
+rule "SecurityAlarmUpdateMQTT"
+when
+    Item SecurityAlarm changed
+then
+    val mqttActions = getActions("mqtt","mqtt:broker:broker")
+    mqttActions.publishMQTT("SecurityAlarm/bool_Sound",SecurityAlarm.state.toString(),true)
+end
+
+rule "SecurityCameraUpdateMQTT"
+when
+    Item SecurityCamera changed
+then
+    val mqttActions = getActions("mqtt","mqtt:broker:broker")
+    mqttActions.publishMQTT("SecurityCamera/bool_On",SecurityCamera.state.toString(),true)
+end
+
+rule "CODetectorStateUpdateMQTT"
+when
+    Item CODetectorState changed
+then
+    val mqttActions = getActions("mqtt","mqtt:broker:broker")
+    mqttActions.publishMQTT("CODetectorState/bool_High",CODetectorState.state.toString(),true)
+end
+
+rule "MotionSensorStateUpdateMQTT"
+when
+    Item MotionSensorState changed
+then
+    val mqttActions = getActions("mqtt","mqtt:broker:broker")
+    mqttActions.publishMQTT("MotionSensorState/bool_motion_sensed",MotionSensorState.state.toString(),true)
+end
+
+rule "OpenCloseSensorStateUpdateMQTT"
+when
+    Item OpenCloseSensorState changed
+then
+    val mqttActions = getActions("mqtt","mqtt:broker:broker")
+    mqttActions.publishMQTT("OpenCloseSensorState/bool_Closed",OpenCloseSensorState.state.toString(),true)
+end
+
+rule "SmokeDetectorUpdateMQTT"
+when
+    Item SmokeDetector changed
+then
+    val mqttActions = getActions("mqtt","mqtt:broker:broker")
+    mqttActions.publishMQTT("SmokeDetector/bool_smoke_detected",SmokeDetector.state.toString(),true)
+end
+
+rule "TemperatureSensorStateUpdateMQTT"
+when
+    Item TemperatureSensorState changed
+then
+    val mqttActions = getActions("mqtt","mqtt:broker:broker")
+    mqttActions.publishMQTT("TemperatureSensorState/int_Temp",TemperatureSensorState.state.toString(),true)
+end
+
+rule "DoorbellRingUpdateMQTT"
+when
+    Item DoorbellRing changed
+then
+    val mqttActions = getActions("mqtt","mqtt:broker:broker")
+    mqttActions.publishMQTT("Doorbell/bool_Rung",DoorbellRing.state.toString(),true)
+end
+
+rule "DoorbellUnlockUpdateMQTT"
+when
+    Item DoorbellUnlock changed
+then
+    val mqttActions = getActions("mqtt","mqtt:broker:broker")
+    mqttActions.publishMQTT("Doorbell/bool_Unlock",DoorbellUnlock.state.toString(),true)
+end
+
+rule "SmartHomeUpdateMQTT"
+when
+    Item SmartHome changed
+then
+    val mqttActions = getActions("mqtt","mqtt:broker:broker")
+    mqttActions.publishMQTT("SmartHome/str_mode",SmartHome.state.toString(),true)
+end

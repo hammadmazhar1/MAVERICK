@@ -1,0 +1,267 @@
+Switch Garage_Door_Lock "Garage Door Lock"{
+    channel="mqtt:topic:broker:GarageDoorLock:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Garage_Light "Garage Light"{
+    channel="mqtt:topic:broker:GarageLight:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Front_Door_Light "Front Light"{
+    channel="mqtt:topic:broker:FrontDoorLight:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Front_Door_Lock "Front Door Lock"{
+    channel="mqtt:topic:broker:FrontDoorLock:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Basement_Light "Basement Light"{
+    channel="mqtt:topic:broker:BasementLight:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Basement_Presense_State "Basement Presense Sensor"{
+    channel="mqtt:topic:broker:BasementPresenseSensor:bool_Presense_Sensed", autoupdate="true" [profile="system:follow"]
+}
+Switch Heater "Heater"{
+    channel="mqtt:topic:broker:Heater:bool_On", autoupdate="true" [profile="system:follow"]
+}
+String Washer_Dryer_Status "Washer Dryer Status"{
+    channel="mqtt:topic:broker:WasherDryer:str_Status", autoupdate="true" [profile="system:follow"]
+}
+Switch Washer_Dryer_Switch "Washer Dryer Switch"{
+    channel="mqtt:topic:broker:WasherDryer:bool_On", autoupdate="true" [profile="system:follow"]
+}
+String Washer_Dryer_Load "Washer Dryer Load"{
+    channel="mqtt:topic:broker:WasherDryer:str_Load", autoupdate="true" [profile="system:follow"]
+}
+Switch Basement_Valve "Basement Valve"{
+    channel="mqtt:topic:broker:BasementValve:bool_Closed", autoupdate="true" [profile="system:follow"]
+}
+Switch Basement_Leak_State "Basement Water Leak Sensor"{
+    channel="mqtt:topic:broker:BasementLeakState:bool_Wet", autoupdate="true" [profile="system:follow"]
+}
+Switch Water_Heater "Water Heater"{
+    channel="mqtt:topic:broker:WaterHeater:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Front_Doorbell_Ring "Front Doorbell Ring"{
+    channel="mqtt:topic:broker:FrontDoorbell:bool_Rung", autoupdate="true" [profile="system:follow"]
+}
+Switch Front_Doorbell_Unlock "Front Doorbell Unlocking"{
+    channel="mqtt:topic:broker:FrontDoorbell:bool_Unlock", autoupdate="true" [profile="system:follow"]
+}
+Switch Front_Camera "Front Security Camera"{
+    channel="mqtt:topic:broker:FrontCamera:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Living_Room_Fan "Living Room Fan"{
+    channel="mqtt:topic:broker:LivingRoomFan:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Living_Room_Shades "Living Room Shades"{
+    channel="mqtt:topic:broker:LivingRoomShades:bool_Closed", autoupdate="true" [profile="system:follow"]
+}
+String Patio_Door_Sensor "Patio Door Open Sensor"{
+    channel="mqtt:topic:broker:PatioDoorSensor:str_State", autoupdate="true" [profile="system:follow"]
+}
+Switch Living_Room_Presense_Sensor "Living Room Presense Sensor"{
+    channel="mqtt:topic:broker:LivingRoomPresenseSensor:bool_Presense", autoupdate="true" [profile="system:follow"]
+}
+Switch Living_Room_AC "Living Room AC"{
+    channel="mqtt:topic:broker:LivingRoomAC:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Smart_TV "Smart TV"{
+    channel="mqtt:topic:broker:SmartTV:bool_On", autoupdate="true" [profile="system:follow"]
+}
+String Smart_TV_Whats_Playing "Smart TV Whats Playing"{
+    channel="mqtt:topic:broker:SmartTV:str_Whats_Playing", autoupdate="true" [profile="system:follow"]
+}
+Switch Living_Room_Light "Living Room Light"{
+    channel="mqtt:topic:broker:LivingRoomLight:bool_On", autoupdate="true" [profile="system:follow"]
+}
+String Living_Room_Light_Color "Living Room Light Color"{
+    channel="mqtt:topic:broker:LivingRoomLight:str_Color", autoupdate="true" [profile="system:follow"]
+}
+Number Living_Room_Light_Intensity "Living Room Light Intensity"{
+    channel="mqtt:topic:broker:LivingRoomLight:int_intensity", autoupdate="true" [profile="system:follow"]
+}
+Number Living_Room_Temp_Sensor "Living Room Temp. Sensor"{
+    channel="mqtt:topic:broker:LivingRoomTempSensor:int_Temp", autoupdate="true" [profile="system:follow"]
+}
+Switch Living_Room_CO_Sensor "Living Room CO Sensor"{
+    channel="mqtt:topic:broker:LivingRoomCOSensor:bool_CO_Detected", autoupdate="true" [profile="system:follow"]
+}
+Switch Living_Room_Smoke_Detector "Living Room Smoke Detector"{
+    channel="mqtt:topic:broker:LivingRoomSmokeDetector:bool_Smoke_Detected", autoupdate="true" [profile="system:follow"]
+}
+Switch Living_Room_Window "Living Room Window"{
+    channel="mqtt:topic:broker:LivingRoomWindow:bool_Open", autoupdate="true" [profile="system:follow"]
+}
+Switch Living_Room_Alarm "Living_Room_Alarm"{
+    channel="mqtt:topic:broker:LivingRoomAlarm:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Living_Room_Camera "Living_Room_Camera"{
+    channel="mqtt:topic:broker:LivingRoomCamera:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Number Outside_Light_Sensor "Outside Light Sensor"{
+    channel="mqtt:topic:broker:OutsideLightSensor:int_Illuminance", autoupdate="true" [profile="system:follow"]
+}
+Switch Refrigerator "Refrigerator"{
+    channel="mqtt:topic:broker:Refrigerator:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Number Refrigerator_Cold_Level "Refrigerator Cold Level"{
+    channel="mqtt:topic:broker:Refrigerator:int_Level", autoupdate="true" [profile="system:follow"]
+}
+Switch Oven "Oven"{
+    channel="mqtt:topic:broker:Oven:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Number Oven_Temperature "Oven Temperature"{
+    channel="mqtt:topic:broker:Oven:int_Temperature", autoupdate="true" [profile="system:follow"]
+}
+Switch Coffee_Maker "Coffee Maker" {
+    channel="mqtt:topic:broker:CoffeeMaker:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Number Coffee_Maker_Coffee_Level "Coffee Maker Coffee Level"{
+    channel="mqtt:topic:broker:CoffeeMaker:int_Level", autoupdate="true" [profile="system:follow"]
+}
+Switch Kitchen_Light "Kitchen Light"{
+    channel="mqtt:topic:broker:KitchenLight:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Kitchen_Smoke_Detector "Kitchen Smoke Detector"{
+    channel="mqtt:topic:broker:KitchenSmokeDetector:bool_Smoke_Detected", autoupdate="true" [profile="system:follow"]
+}
+Switch Kitchen_CO_Sensor "Kitchen CO Sensor"{
+    channel="mqtt:topic:broker:KitchenCOSensor:bool_CO_Detected", autoupdate="true" [profile="system:follow"]
+}
+Switch Kitchen_Vent_Fan "Kitchen Vent Fan"{
+    channel="mqtt:topic:broker:KitchenVentFan:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Kitchen_Window "Kitchen Window"{
+    channel="mqtt:topic:broker:KitchenWindow:bool_Open", autoupdate="true" [profile="system:follow"]
+}
+Switch Kitchen_Leak_State "Kitchen Leak Sensor"{
+    channel="mqtt:topic:broker:KitchenLeakState:bool_Wet", autoupdate="true" [profile="system:follow"]
+}
+Switch Kitchen_Valve "Kitchen Valve"{
+    channel="mqtt:topic:broker:KitchenValve:bool_Closed", autoupdate="true" [profile="system:follow"]
+}
+Switch Dishwasher "Dishwasher"{
+    channel="mqtt:topic:broker:Dishwasher:bool_On", autoupdate="true" [profile="system:follow"]
+}
+String Dishwasher_Load "Dishwasher_Load"{   
+    channel="mqtt:topic:broker:Dishwasher:str_Load", autoupdate="true" [profile="system:follow"]
+}
+Switch Bathroom_1_Leak_State "Bathroom 1 Leak Sensor"{
+    channel="mqtt:topic:broker:Bathroom1LeakState:bool_Wet", autoupdate="true" [profile="system:follow"]
+}
+Switch Bathroom_1_Valve "Bathroom 1 Valve"{
+    channel="mqtt:topic:broker:Bathroom1Valve:bool_Closed", autoupdate="true" [profile="system:follow"]
+}
+Switch Bathroon_1_Light "Bathroom 1 Light"{
+    channel="mqtt:topic:broker:Bathroom1Light:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Bathroom_1_Motion_Detector "Bathroom 1 Motion Detector" {
+    channel="mqtt:topic:broker:Bathroom1MotionDetector:bool_Motion_Detected", autoupdate="true" [profile="system:follow"]
+}
+Switch Bathroom_1_Vent_Fan "Bathroom 1 Vent Fan" {
+    channel="mqtt:topic:broker:Bathroom1VentFan:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Bathroom_2_Leak_State "Bathroom 2 Leak Sensor"{
+    channel="mqtt:topic:broker:Bathroom2LeakState:bool_Wet", autoupdate="true" [profile="system:follow"]
+}
+Switch Bathroom_2_Valve "Bathroom 2 Valve"{
+    channel="mqtt:topic:broker:Bathroom2Valve:bool_Closed", autoupdate="true" [profile="system:follow"]
+}
+Switch Bathroon_2_Light "Bathroom 2 Light"{
+    channel="mqtt:topic:broker:Bathroom2Light:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Bathroom_2_Motion_Detector "Bathroom 2 Motion Detector" {
+    channel="mqtt:topic:broker:Bathroom2MotionDetector:bool_Motion_Detected", autoupdate="true" [profile="system:follow"]
+}
+Switch Bathroom_2_Vent_Fan "Bathroom 2 Vent Fan" {
+    channel="mqtt:topic:broker:Bathroom2VentFan:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Bedroom_1_Shades "Bedroom 1 Shades"{
+    channel="mqtt:topic:broker:Bedroom1Shades:bool_Closed", autoupdate="true" [profile="system:follow"]
+}
+Switch Bedroom_1_Window "Bedroom 1 Window"{
+    channel="mqtt:topic:broker:Bedroom1Window:bool_Open", autoupdate="true" [profile="system:follow"]
+}
+Number Bedroom_1_CO2_Monitor "Bedroom 1 CO2 Monitor"{
+    channel="mqtt:topic:broker:Bedroom1CO2Monitor:int_CO2_Level", autoupdate="true" [profile="system:follow"]
+}
+Switch Bedroom_1_Light "Bedroom 1 Light"{
+    channel="mqtt:topic:broker:Bedroom1Light:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Number Bedroom_1_Light_Intensity "Bedroom 1 Light Intensity"{
+    channel="mqtt:topic:broker:Bedroom1LightIntensity:int_Intensity", autoupdate="true" [profile="system:follow"]
+}
+String Bedroom_1_Light_Color "Bedroom 1 Light Color"{
+    channel="mqtt:topic:broker:Bedroom1LightColor:str_Color", autoupdate="true" [profile="system:follow"]
+}
+Switch Bedroom_1_Fan "Bedroom 1 Fan"{
+    channel="mqtt:topic:broker:Bedroom1Fan:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Bedroom_1_Smart_Plug "Bedroom 1 Smart Plug"{
+    channel="mqtt:topic:broker:Bedroom1SmartPlug:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Number Bedroom_1_Temp_Sensor "Bedroom 1 Temp. Sensor" {
+    channel="mqtt:topic:broker:Bedroom1TempSensor:int_Temp", autoupdate="true" [profile="system:follow"]
+}
+Number Bedroom_1_AC "Bedroom 1 AC"{
+    channel="mqtt:topic:broker:Bedroom1AC:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Bedroom_2_Shades "Bedroom 2 Shades"{
+    channel="mqtt:topic:broker:Bedroom2Shades:bool_Closed", autoupdate="true" [profile="system:follow"]
+}
+Switch Bedroom_2_Window "Bedroom 2 Window"{
+    channel="mqtt:topic:broker:Bedroom2Window:bool_Open", autoupdate="true" [profile="system:follow"]
+}
+Number Bedroom_2_CO2_Monitor "Bedroom 2 CO2 Monitor"{
+    channel="mqtt:topic:broker:Bedroom2CO2Monitor:int_CO2_Level", autoupdate="true" [profile="system:follow"]
+}
+Switch Bedroom_2_Light "Bedroom 2 Light"{
+    channel="mqtt:topic:broker:Bedroom2Light:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Number Bedroom_2_Light_Intensity "Bedroom 2 Light Intensity"{
+    channel="mqtt:topic:broker:Bedroom2LightIntensity:int_Intensity", autoupdate="true" [profile="system:follow"]
+}
+String Bedroom_2_Light_Color "Bedroom 2 Light Color"{
+    channel="mqtt:topic:broker:Bedroom2LightColor:str_Color", autoupdate="true" [profile="system:follow"]
+}
+Switch Bedroom_2_Fan "Bedroom 2 Fan"{
+    channel="mqtt:topic:broker:Bedroom2Fan:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Bedroom_2_Smart_Plug "Bedroom 2 Smart Plug"{
+    channel="mqtt:topic:broker:Bedroom2SmartPlug:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Number Bedroom_2_Temp_Sensor "Bedroom 2 Temp. Sensor" {
+    channel="mqtt:topic:broker:Bedroom2TempSensor:int_Temp", autoupdate="true" [profile="system:follow"]
+}
+Number Bedroom_2_AC "Bedroom 2 AC"{
+    channel="mqtt:topic:broker:Bedroom2AC:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Bedroom_3_Shades "Bedroom 3 Shades"{
+    channel="mqtt:topic:broker:Bedroom3Shades:bool_Closed", autoupdate="true" [profile="system:follow"]
+}
+Switch Bedroom_3_Window "Bedroom 3 Window"{
+    channel="mqtt:topic:broker:Bedroom3Window:bool_Open", autoupdate="true" [profile="system:follow"]
+}
+Number Bedroom_3_CO2_Monitor "Bedroom 3 CO2 Monitor"{
+    channel="mqtt:topic:broker:Bedroom3CO2Monitor:int_CO2_Level", autoupdate="true" [profile="system:follow"]
+}
+Switch Bedroom_3_Light "Bedroom 3 Light"{
+    channel="mqtt:topic:broker:Bedroom3Light:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Number Bedroom_3_Light_Intensity "Bedroom 3 Light Intensity"{
+    channel="mqtt:topic:broker:Bedroom3LightIntensity:int_Intensity", autoupdate="true" [profile="system:follow"]
+}
+String Bedroom_3_Light_Color "Bedroom 3 Light Color"{
+    channel="mqtt:topic:broker:Bedroom3LightColor:str_Color", autoupdate="true" [profile="system:follow"]
+}
+Switch Bedroom_3_Fan "Bedroom 3 Fan"{
+    channel="mqtt:topic:broker:Bedroom3Fan:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Switch Bedroom_3_Smart_Plug "Bedroom 3 Smart Plug"{
+    channel="mqtt:topic:broker:Bedroom3SmartPlug:bool_On", autoupdate="true" [profile="system:follow"]
+}
+Number Bedroom_3_Temp_Sensor "Bedroom 3 Temp. Sensor" {
+    channel="mqtt:topic:broker:Bedroom3TempSensor:int_Temp", autoupdate="true" [profile="system:follow"]
+}
+Number Bedroom_3_AC "Bedroom 3 AC"{
+    channel="mqtt:topic:broker:Bedroom3AC:bool_On", autoupdate="true" [profile="system:follow"]
+}
+String Smart_Home_Status "Smart Home Status"{
+    channel="mqtt:topic:broker:SmartHome:str_Status", autoupdate="true" [profile="system:follow"]
+}

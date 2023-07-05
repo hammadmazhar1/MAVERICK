@@ -1,0 +1,48 @@
+Switch AirConditioner "Air Conditioner" {
+    channel="mqtt:topic:broker:AirConditioner:bool_On"
+}
+Switch LightBulb "Light Bulb" {
+    channel="mqtt:topic:broker:LightBulb:bool_On"
+}
+Switch Shades "Shades" {
+    channel="mqtt:topic:broker:Shades:bool_Closed"
+}
+Switch Heater "Heater" {
+    channel="mqtt:topic:broker:Heater:bool_On"
+}
+Number Thermostat "Thermostat"{
+    channel="mqtt:topic:broker:Thermostat:int_Temp"
+}
+Switch DoorLock "Door Lock" {
+    channel="mqtt:topic:broker:DoorLock:bool_Locked"
+}
+Switch SecurityAlarm "Security Alarm" {
+    channel="mqtt:topic:broker:SecurityAlarm:bool_Sound"
+}
+Switch SecurityCamera "Security Camera" {
+    channel="mqtt:topic:broker:SecurityCamera:bool_On"
+}
+Switch CODetectorState "CO Detector State" {
+    channel="mqtt:topic:broker:CODetectorState:bool_High"
+}
+Switch MotionSensorState "Motion Sensor State" {
+    channel="mqtt:topic:broker:MotionSensorState:bool_motion_sensed"
+}
+Switch OpenCloseSensorState "Open Close Sensor State" {
+    channel="mqtt:topic:broker:OpenCloseSensorState:bool_Closed"
+}
+Switch SmokeDetectorState "Smoke Detector State" {
+    channel="mqtt:topic:broker:SmokeDetectorState:bool_Smoke_Detected"
+}
+Number TemperatureSensorState "Temperature Sensor State"{
+    channel="mqtt:topic:broker:TemperatureSensorState:int_Temp"
+}
+Switch DoorbellUnlock "Doorbell Unlock"{
+    channel="mqtt:topic:broker:Doorbell:bool_Unlock"
+}
+Switch DoorbellRing "Doorbell Ringing"{
+    channel="mqtt:topic:broker:Doorbell:bool_Rung"
+}
+String SmartHome "Smart Home Mode"{
+    channel="mqtt:topic:broker:SmartHome:str_mode"
+}

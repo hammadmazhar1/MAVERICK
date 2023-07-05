@@ -1,0 +1,81 @@
+{
+   "Devices":{
+      "Living Room Air Conditioner":{
+         "bool_On":false
+      },
+      "Bedroom Air Conditioner":{
+         "bool_On":false
+      },
+      "Living Room Humidifier":{
+         "bool_On":false
+      },
+      "Bedroom Air Humidifier":{
+         "bool_On":false
+      },
+      "Living Room Fan":{
+         "bool_On":false
+      },
+      "Bedroom Fan":{
+         "bool_On":false
+      },
+      "Living Room Light":{
+         "bool_On":false
+      },
+      "Bedroom Light":{
+         "bool_On":false
+      },
+      "Living Room Shades":{
+         "bool_Closed":false
+      },
+      "Bedroom Shades":{
+         "bool_Closed":false
+      },
+      "Thermostat":{
+         "int_Temp":65
+      },
+      "Microwave Oven":{
+         "bool_On":false,
+         "int_Temp":100
+      },
+      "Door Lock":{
+         "bool_Locked":false
+      },
+      "Security Alarm":{
+         "bool_set":false,
+         "bool_alarm":false
+      },
+      "Front Porch Security Camera":{
+         "bool_On":false
+      },
+      "Back Porch Security Camera":{
+         "bool_On":false
+      },
+      "Smart TV":{
+         "bool_On":false,
+         "str_whats_playing":"nothing"
+      },
+      "Temperature Sensor State":{
+         "int_Living_Room_Temp":65,
+         "int_Bedroom_Temp":65
+      },
+      "Doorbell":{
+         "bool_rung":false,
+         "bool_Unlock":false,
+         "str_Alarm_mode":"Off"
+      },
+      "Smart Home":{
+         "str_mode":"Home"
+      }
+   },
+   "Rules":{
+      "1":"IF \"Smart TV.bool_On\"==true AND \"Time\"==\"* 0 19 * * ?\" THEN \"Living Room Shades.bool_Closed\"=true, \"Living Room Light.bool_On\"=false",
+      "2":"IF \"Smart Home.str_mode\"==\"Away\" THEN \"Living Room Fan.bool_On\"=false, \"Bedroom Fan.bool_On\"=false, \"Living Room Light.bool_On\"=false, \"Bedroom Light.bool_On\"=false, \"Smart TV.bool_On\"=false",
+      "3":"IF \"Time\"==\"0 0 0 * * ?\" THEN \"Living Room Humidifier.bool_On\"=true, \"Bedroom Humidifier.bool_On\"=true",
+      "4":"IF \"Smart TV.str_whats_playing\"==\"movie\" AND \"Time>\"0 0 19 * * ?\" THEN \"Thermostat.int_Temp\"=70, \"Living Room Light.bool_On\"=false, \"Living Room Fan.bool_On\"=true, \"Living Room Humidifier.bool_On\"=true, \"Living Room Shades.bool_Closed\"=true",
+      "5":"IF \"Temperature Sensor State.int_Living_Room_Temp\">70, THEN \"Living Room Fan.bool_On\"=true",
+      "6":"IF \"Door Lock.bool_Locked\"==true AND\"Doorbell.bool_Unlock\"==true THEN \"Doorbell.str_Alarm_mode=\"siren\"",
+      "7":"IF \"Doorbell.bool_rung\"==true THEN \"Front Porch Security Camera.bool_On\"=true",
+      "9":"IF \"Time==\"0 0 8 * * ?\" THEN \"Living Room Shades.bool_Closed\"=false",
+      "10":"IF \"Door Lock.bool_Locked\"==true AND \"Time\">\"0 0 20 * * ?\" THEN \"Living Room Shades.bool_Closed\"=true, \"Front Porch Security Camera.bool_On\"=true, \"Back Porch Security Camera.bool_On\"=true"
+   }
+}

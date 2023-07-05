@@ -1,0 +1,61 @@
+{
+	"Devices":{
+		"Air Conditioner":{
+			"bool_On":false
+		},
+		"Light Bulb": {
+			"bool_On":false
+		},
+		"Shades":{
+			"bool_Closed":false
+		},
+		"Heater":{
+			"bool_On":false
+		},
+		"Thermostat":{
+			"int_Temp":65
+		},
+		"Door Lock":{
+			"bool_Locked":false
+		},
+		"Security Alarm":{
+			"bool_Sound":false
+		},
+		"Security Camera":{
+			"bool_On":false
+		},
+		"CO Detector State":{
+			"bool_High": false
+		},
+		"Motion Sensor State":{
+			"bool_motion_sensed":false
+		},
+		"Open Close Sensor State":{
+			"bool_Closed":false
+		},
+		"Smoke Detector State":{
+			"bool_Smoke_Detected":false
+		},
+		"Temperature Sensor State":{
+			"int_Temp":65
+		},
+		"Doorbell":{
+			"bool_rung":false,
+			"bool_unlock":false
+		},
+		"Smart Home":{
+			"str_mode":"home"
+		}
+	},
+	"Rules":{
+		"1":"IF \"Smart Home.str_mode\"==\"home\" AND \"Temperature Sensor State.int_Temp\">75 THEN \"Air Conditioner.bool_On\"=true",
+		"2":"IF \"Smart Home.str_mode\"==\"home\" AND \"Doorbell.bool_rung\"==true THEN \"Security Camera.bool_On\"=true",
+		"3":"IF \"Time\">\"0 0 7 * * ?\" AND \"Time\"<\"0 0 9 * * ?\" THEN \"Shades.bool_On\"=true",
+		"4":"IF \"Smart Home.str_mode\"==\"away\" AND \"CO Detector State.bool_High\"==true THEN \"Security Alarm.bool_On\"=true",
+		"5":"IF \"Smart Home.str_mode\"==\"away\" AND \"Smoke Detector State.bool_Smoke_Detected\"==true THEN \"Security Alarm.bool_On\"=true",
+		"6":"IF \"Smart Home.str_mode\"==\"away\" THEN \"Door Lock.bool_Locked\"=true",
+		"7":"IF \"Motion Sensor State.bool_motion_sensed\"==true THEN \"Light Bulb.bool_On\"=true",
+		"8":"IF \"Open Close Sensor State.bool_Closed\"==false THEN \"Security Camera.bool_On\"=true",
+		"9":"IF \"Smart Home.str_mode\"==\"home\" AND \"Temperature Sensor State.int_Temp\"<65 THEN \"Heater.bool_On\"=true"
+	}
+}

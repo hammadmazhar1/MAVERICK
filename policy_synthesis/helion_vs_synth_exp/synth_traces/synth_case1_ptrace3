@@ -1,0 +1,9 @@
+<Home,locationMode,home>
+<Door_Lock,lock,locked>
+<Gas_Stove,switch,off>
+<Bread_Maker,switch,off>
+<Home,locationMode,away>
+<Home,locationMode,home>
+<Door_Lock,lock,unlocked>
+<Door_Lock,lock,locked>
+<Gas_Stove,switch,on>

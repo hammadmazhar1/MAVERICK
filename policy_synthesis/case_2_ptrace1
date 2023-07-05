@@ -1,0 +1,5 @@
+<Water_Leak_Detector,leakDetected,wet>
+<Water_Valve,valve,closed>
+<Smoke_Detector,smoke,detected>
+<Water_Valve,valve,open>
+<Fire_Sprinkler,sprinkler,on>

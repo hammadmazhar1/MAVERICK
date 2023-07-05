@@ -1,0 +1,5 @@
+LeakDetected: ==(CURRENT(Water_Leak_Detector/str_LeakDetected),CONSTANT_STR(wet))
+SmokeDetected: ==(CURRENT(Smoke_Detector/str_smoke),CONSTANT_STR(detected))
+ValveClosed: ==(CURRENT(Water_Valve/str_valve),CONSTANT_STR(closed))
+ValveOpen: ==(CURRENT(Water_Valve/str_valve),CONSTANT_STR(closed))
+SprinklerOn: ==(CURRENT(Fire_Sprinkler/str_sprinkler),CONSTANT_STR(on))

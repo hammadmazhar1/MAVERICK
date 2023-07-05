@@ -1,0 +1,6 @@
+=>(|(AwayFromHome,OnVacation),!(DoorIsBeingUnlocked))
+=>(|(AwayFromHome,OnVacation),!(MicrowaveIsTurnedOn))
+=>(|(AwayFromHome,OnVacation),!(LivingRoomShadeIsOpened))
+=>(|(AwayFromHome,OnVacation),AlarmIsBeingSet)
+=>(|(AwayFromHome,OnVacation),!(FrontCameraisTurnedOn))
+=>(|(AwayFromHome,OnVacation),!(BackCameraisTurnedOn))

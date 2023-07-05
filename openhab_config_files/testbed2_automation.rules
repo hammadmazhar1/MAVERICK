@@ -1,0 +1,97 @@
+rule "Shades are open and coffee maker is on when at home and at 7AM"
+when
+    Time cron "0 0 7 * * ?"
+then
+    if(SmartHome == "Home") {
+        Shades.sendCommand(OFF)
+        CoffeeMaker.sendCommand(ON)
+    }
+end
+
+rule "Turn off fan and lighting remote, turn on security camara, lock the door, and close the garage when not home"
+when
+    Item SmartHome changed to "Away"
+then
+    Fan.sendCommand(OFF)
+    SecurityCamera.sendCommand(ON)
+    DoorLock.sendCommand(ON)
+    GarageDoorOpener.sendCommand(ON)
+end
+
+rule "Sound alarm and turn on security camera when motion detected and not home"
+when
+    Item MotionSensorState received command ON
+then
+    if(SmartHome == "Away") {
+        SecurityAlarm.sendCommand("siren")
+        SecurityCamera.sendCommand(ON)
+    }
+end
+
+rule "Close the valve when water leak detected"
+when
+    Item WaterLeakDetectorState changed
+then
+    if (WaterLeakDetectorState.state == ON){
+        Valve.sendCommand(ON)
+    }
+end
+
+rule "Sound the gas sensor alarm in high odor level"
+when
+    Item GasSensor received update
+then
+    if ((GasSensor.state as Number) > 10){
+        sendCommand("GasSensorAlarmMode","siren")
+    } else{
+        sendCommand("GasSensorAlarmMode","off")
+    }
+end
+
+rule "Unlock the door when garage door is open"
+when
+    Item GarageDoorOpener received command OFF
+then
+    DoorLock.sendCommand(OFF)
+end
+
+rule "Turn on robot vaccum when not home at 1PM"
+when
+    Time cron "0 0 13 * * ?"
+then
+    if(SmartHome == "Away") {
+        RobotVacuum.sendCommand(ON)
+    }
+end
+
+rule "Turn on light when on vacation mode and at 6PM"
+when
+    Time cron "0 0 18 * * ?"
+then
+    if(SmartHome== "Vacation") {
+        LightingRemote.sendCommand(ON)
+    }
+end
+
+rule "Change light color to yellow at 9PM"
+when
+    Time cron "0 0 21 * * ?"
+then
+    LightingRemoteSetColor.sendCommand("yellow")
+end
+
+rule "Turn off light when on vacation mode and at 11PM"
+when
+    Time cron "0 0 23 * * ?"
+then
+    if(SmartHome == "Vacation") {
+        LightingRemote.sendCommand(OFF)
+    }
+end
+
+rule "Close shades at 8PM"
+when
+    Time cron "0 0 20 * * ?"
+then
+    Shades.sendCommand(ON)
+end

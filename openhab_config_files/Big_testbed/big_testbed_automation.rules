@@ -1,0 +1,190 @@
+rule "Turn on Front Light when dark outside"
+when
+    Item Outside_Light_Sensor changed from 4 to 3
+then
+    Front_Door_Light.sendCommand(ON)
+end
+rule "Turn off Front Light when bright outside"
+when
+    Item Outside_Light_Sensor changed from 3 to 4
+then
+    Front_Door_Light.sendCommand(OFF)
+end
+rule "Open Front Door Lock when Garage Door Unlocked"
+when
+    Item Garage_Door_Lock changed to OFF
+then
+    Front_Door_Lock.sendCommand(OFF)
+end
+rule "Turn on front camera when doorbell rings"
+when
+    Item Front_Doorbell_Ring changed to ON
+then
+    Front_Camera.sendCommand(ON)
+end
+rule "On Sensing presense in basement, turn light on"
+when
+    Item Basement_Presense_State changed to ON 
+then
+    Basement_Light.sendCommand(ON)
+end
+rule "On sensing basement leak, shut off valve"
+when
+    Item Basement_Leak_State changed to ON
+then
+    Basement_Valve.sendCommand(ON)
+end
+rule "When Away from Home, lock Garage Door and Front Door and turn On Camera"
+when
+    Item Smart_Home_Status changed to "Away" or Item Smart_Home_Status changed to "Vacation"
+then
+    Garage_Door_Lock.sendCommand(ON)
+    Front_Door_Lock.sendCommand(ON)
+    Front_Camera.sendCommand(ON)
+end
+rule "Turn on Fan when Living Room Temp above 75 f"
+when
+    Item Living_Room_Temp_Sensor changed from 74 to 75 
+then
+    Living_Room_Fan.sendCommand(ON)
+end
+rule "Turn on Fan when Bedroom 1 Temp above 75 f"
+when
+    Item Bedroom_1_Temp_Sensor changed from 74 to 75 
+then
+    Bedroom_1_Fan.sendCommand(ON)
+end
+rule "Turn on Fan when Bedroom 2 Temp above 75 f"
+when
+    Item Bedroom_2_Temp_Sensor changed from 74 to 75 
+then
+    Bedroom_2_Fan.sendCommand(ON)
+end
+rule "Turn on Fan when Bedroom 3 Temp above 75 f"
+when
+    Item Bedroom_3_Temp_Sensor changed from 74 to 75 
+then
+    Bedroom_3_Fan.sendCommand(ON)
+end
+rule "Turn on AC when Living Room Temp above 80 f"
+when
+    Item Living_Room_Temp_Sensor changed from 79 to 80 
+then
+    Living_Room_AC.sendCommand(ON)
+end
+rule "Turn on AC when Bedroom 1 Temp above 80 f"
+when
+    Item Bedroom_1_Temp_Sensor changed from 79 to 80 
+then
+    Bedroom_1_AC.sendCommand(ON)
+end
+rule "Turn on AC when Bedroom 2 Temp above 80 f"
+when
+    Item Bedroom_2_Temp_Sensor changed from 79 to 80 
+then
+    Bedroom_2_AC.sendCommand(ON)
+end
+rule "Turn on AC when Bedroom 3 Temp above 80 f"
+when
+    Item Bedroom_3_Temp_Sensor changed from 79 to 80 
+then
+    Bedroom_3_AC.sendCommand(ON)
+end
+rule "Turn on Living Room Camera and Alarm if Patio Door opened while away "
+when
+    Item Patio_Door_Sensor changed to "Open"
+then
+    Living_Room_Alarm.sendCommand(ON)
+    Living_Room_Camera.sendCommand(ON)
+end
+rule "Open Living Room Shades at 7 AM"
+when
+    Time cron "0 0 7 * * ?"
+then
+    Living_Room_Shades.sendCommand(OFF)
+end
+rule "Open Bedroom 1 Shades at 8 AM"
+when
+    Time cron "0 0 8 * * ?"
+then
+    Bedroom_1_Shades.sendCommand(OFF)
+end
+rule "Open Bedroom 2 Shades at 8 AM"
+when
+    Time cron "0 0 8 * * ?"
+then
+    Bedroom_2_Shades.sendCommand(OFF)
+end
+rule "Open Bedroom 3 Shades at 8 AM"
+when
+    Time cron "0 0 8 * * ?"
+then
+    Bedroom_3_Shades.sendCommand(OFF)
+end
+rule "Close Living Room Blinds and lower living room light intensity to 5 when watching HBO after 7 PM "
+when
+    Item Smart_TV_Whats_Playing changed to "HBO"
+then
+    if( now.getHourOfDay() >19 ) {
+        Living_Room_Shades.sendCommand(ON)
+        Living_Room_Light_Intensity.sendCommand(5)
+    }
+end
+rule "Open Windows and Turn On Alarm when Smoke or High CO detected"
+when
+    Item Living_Room_CO_Sensor changed to ON or Item Living_Room_Smoke_Detector changed to ON
+then
+    Living_Room_Window.sendCommand(ON)
+    Living_Room_Alarm.sendCommand(ON)
+end
+rule "Turn on heater when Living Room Temp drops to 65"
+when
+    Item Living_Room_Temp_Sensor changed from 66 to 65
+then
+    Heater.sendCommand(ON)
+end
+rule "Turn on Coffee Maker when 7 am and at home"
+when
+    Time cron "0 0 7 * * ?"
+then
+    if (Smart_Home_Status=="Home"){
+        Coffee_Maker.sendCommand(ON)
+    }
+end
+rule "Open Vent Fan and window if smoke detected in Kitchen"
+when
+    Item Kitchen_Smoke_Detector changed to ON
+then
+    Kitchen_Vent_Fan.sendCommand(ON)
+    Kitchen_Window.sendCommand(ON)
+end
+rule "Start Dishwasher when fully loaded"
+when
+    Item Dishwasher_Load changed to "Full"
+then
+    Dishwasher.sendCommand(ON)
+end
+rule "Turn On Living Room Light when dark outside"
+when
+    Item Outside_Light_Sensor changed from 3 to 2
+then
+    Living_Room_Light.sendCommand(ON)
+end
+rule "Open Bedroom 1 Window if CO2 level goes above 1000 ppm"
+when
+    Item Bedroom_1_CO2_Monitor changed from 1000 to 1001
+then
+    Bedroom_1_Window.sendCommand(ON)
+end
+rule "Open Bedroom 2 Window if CO2 level goes above 1000 ppm"
+when
+    Item Bedroom_2_CO2_Monitor changed from 1000 to 1001
+then
+    Bedroom_2_Window.sendCommand(ON)
+end
+rule "Open Bedroom 3 Window if CO2 level goes above 1000 ppm"
+when
+    Item Bedroom_3_CO2_Monitor changed from 1000 to 1001
+then
+    Bedroom_3_Window.sendCommand(ON)
+end

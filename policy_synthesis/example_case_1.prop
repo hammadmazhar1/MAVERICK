@@ -1,0 +1,2 @@
+UserIsAway: ==(CURRENT(Home/str_locationMode),CONSTANT_STR(away))
+DoorIsLocked: ==(CURRENT(Door_Lock/str_lock),CONSTANT_STR(locked))

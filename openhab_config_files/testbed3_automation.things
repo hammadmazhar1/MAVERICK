@@ -1,0 +1,98 @@
+Bridge mqtt:broker:broker "Broker" [ host="192.168.0.51",secure=true, publickeypin=false, keepAlive=60, clientID="Upstream_automation", certificatepin=false, password="parapet",qos=0,reconnectTime=30000,port=1883,lwtRetain=true,username="parapet",enableDiscovery=true] {
+    Thing topic AirConditioner "Air Conditioner" {
+        Channels:
+            Type switch : bool_On "ON Status" [ commandTopic="AirConditioner/bool_On/set",stateTopic="AirConditioner/bool_On",on="true",off="false",postCommand=true]
+    }
+    Thing topic LightBulb "Light Bulb" {
+        Channels:
+            Type switch : bool_On "ON Status" [ commandTopic="LightBulb/bool_On/set",stateTopic="LightBulb/bool_On",on="true",off="false",postCommand=true]
+    }
+    Thing topic Shades "Shades" {
+        Channels:
+            Type switch : bool_Closed "Shades Closed" [ commandTopic="Shades/bool_Closed/set",stateTopic="Shades/bool_Closed",on="true",off="false",postCommand=true]
+    }
+    Thing topic Heater "Heater" {
+        Channels:
+            Type switch : bool_On "ON Status" [ commandTopic="Heater/bool_On/set",stateTopic="Heater/bool_On",on="true",off="false",postCommand=true]
+    }
+    Thing topic Thermostat "Thermostat" {
+        Channels:
+            Type number : int_Temp "Temperature" [
+                commandTopic="Thermostat/int_Temp/set",
+                stateTopic="Thermostat/int_Temp",min=0,max=100,
+                formatBeforePublish="%d",postCommand=true
+            ]
+    }
+    Thing topic DoorLock "Door Lock"{
+        Channels:
+            Type switch : bool_Locked "Door Locked"[
+                commandTopic="DoorLock/bool_Locked/set",
+                stateTopic="DoorLock/bool_Locked",
+                on="true",off="false",postCommand=true
+            ]
+    }
+    Thing topic SecurityAlarm "Security Alarm"{
+        Channels:
+            Type switch : bool_Sound "Sound Status"[
+                commandTopic="SecurityAlarm/bool_Sound/set",
+                stateTopic="SecurityAlarm/bool_Sound",
+                formatBeforePublish="%s",postCommand=true
+            ]
+    }
+    Thing topic SecurityCamera "Security Camera" {
+        Channels:
+            Type switch : bool_On "ON Status" [ commandTopic="SecurityCamera/bool_On/set",stateTopic="SecurityCamera/bool_On",on="true",off="false",postCommand=true]
+    }
+    Thing topic CODetectorState "CO Detector State" {
+        Channels:
+            Type switch : bool_High "CO High" [
+                stateTopic="CODetectorState/bool_High",on="true",off="false",postCommand=true
+            ]
+    }
+    Thing topic MotionSensorState "Motion Sensor State" {
+        Channels:
+            Type switch : bool_motion_sensed "Motion Detected" [
+                stateTopic="MotionSensorState/bool_motion_sensed",on="true",off="false",postCommand=true
+            ]
+    }
+    Thing topic OpenCloseSensorState "Open Close Sensor State" {
+        Channels:
+            Type switch : bool_Closed "Closed Status" [
+                stateTopic="OpenCloseSensorState/bool_Closed",on="true",off="false",postCommand=true
+            ]
+    }
+    Thing topic SmokeDetectorState "Smoke Detector" {
+        Channels:
+            Type switch : bool_Smoke_Detected "Smoke Detected" [
+                stateTopic="SmokeDetectorState/bool_Smoke_Detected",on="true",off="false",postCommand=true
+            ]
+    }
+    Thing topic TemperatureSensorState "Temperature Sensor State" {
+        Channels:
+            Type number : int_Temp "Temperature" [
+                stateTopic="TemperatureSensorState/int_Temp",min=0,max=100,
+                formatBeforePublish="%d",postCommand=true
+            ]
+    }
+    Thing topic Doorbell "Doorbell"{
+        Channels:
+            Type switch : bool_Rung "Bell Rung"[
+                commandTopic="Doorbell/bool_Rung/set",
+                stateTopic="Doorbell/bool_Rung",
+                on="true",off="false",postCommand=true
+            ]
+            Type switch : bool_Unlock "Door Unlocked"[
+                commandTopic="Doorbell/bool_Unlock/set",
+                stateTopic="Doorbell/bool_Unlock",
+                on="true",off="false",postCommand=true
+            ]
+    }
+    Thing topic SmartHome "Smart Home"{
+        Channels:
+            Type string : str_mode "Home Mode"[
+                commandTopic="SmartHome/str_mode/set",
+                stateTopic="SmartHome/str_mode",
+                formatBeforePublish="%s",postCommand=true
+            ]
+    }
+}

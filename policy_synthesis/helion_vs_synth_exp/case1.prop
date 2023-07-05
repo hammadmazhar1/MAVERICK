@@ -1,0 +1,4 @@
+DoorIsLocked: ==(CURRENT(Door_Lock/str_lock),CONSTANT_STR(locked))
+GasStoveIsOn: ==(CURRENT(Gas_Stove/str_switch),CONSTANT_STR(on))
+BreadMakerIsOn: ==(CURRENT(Bread_Maker/str_switch),CONSTANT_STR(on))
+UserIsAway: ==(CURRENT(Home/str_locationMode),CONSTANT_STR(away))
